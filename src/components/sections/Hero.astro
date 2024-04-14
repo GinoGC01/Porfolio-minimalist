@@ -1,0 +1,124 @@
+---
+import {basics} from '../../../cv.json'
+import WorldMap from '../../icons/WorldMap.astro'
+import GitHub from '../../icons/GitHub.astro'
+import LinkedIn from '../../icons/LinkedIn.astro'
+import X from '../../icons/X.astro'
+import Gmail from '../../icons/Mail.astro'
+import Phone from '../../icons/Phone.astro'
+
+
+const {name, label, image, location, profiles, phone, email, summary} = basics
+const {city, region} = location
+
+const linkedInfo = profiles.find(({network}) => network === 'LinkedIn')
+
+const linkedUrl = linkedInfo?.url
+
+const gitInfo = profiles.find(({network}) => network === 'GitHub')
+
+const gitUrl = gitInfo?.url
+
+
+---
+<section>
+    <div class="container">
+        <div class="info">
+            <h1>{name}</h1>
+            <h2>{label}</h2>
+            <span>
+                <WorldMap/>
+                {city}, {region}
+            </span>
+            <footer class="print">
+                <ul>
+                    <li>
+                        <a href={`${linkedUrl}`}>
+                            <LinkedIn/> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href={`${email}`}>
+                            <Gmail/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href={`${phone}`}>
+                            <Phone/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href={`${gitUrl}`}>
+                            <GitHub/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href={`${X}`}>
+                            <X/>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <figure>
+            <img src={image} alt=`${name} ${label}`>
+        </figure>
+    </div>
+</section>
+
+<style>
+    .container{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+
+    span{
+        color:rgba(0, 0, 0, 0.65);
+    }
+
+    ul{
+        display: flex;
+        gap: .8em
+    }
+
+    li{
+
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        transition: background-color ease-in .1s ;
+    }
+
+    li:hover{
+        background-color:rgba(0, 0, 0, 0.05);
+    }
+
+    li > a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2em;
+        height: 2em;
+        margin: auto;
+        color: rgba(0, 0, 0, 0.65);
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+
+    figure > img {
+        border-radius: 20px;
+        height: 160px;
+        width: 160px;
+        object-fit: cover;
+    }
+
+</style>

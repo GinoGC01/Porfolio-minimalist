@@ -1,13 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/sections/Hero.astro';
+import Education from '../components/sections/Education.astro';
+import Experience from '../components/sections/Experience.astro';
+import About from '../components/sections/About.astro';
+import Skills from '../components/sections/Skills.astro';
+import Projects from '../components/sections/Projects.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-
+		<Hero />
+		<About />
+		<Experience />
+		<Education />
+		<Projects />
+		<Skills />
 	</main>
 </Layout>
 
 <style>
-	
+	main{
+		max-width: 950px;
+		margin: auto;
+		padding-top: 100px;
+		display: flex;
+		flex-direction: column;
+		gap: 3em;
+	}
+
+	h3{
+		font-size: 2em;
+	}
 </style>

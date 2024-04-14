@@ -1,15 +1,15 @@
-# Porfolio minimalista - JSON 
+# Minimalist Porfolio - JSON 
 
-Portafolio minimalista basado en un archivo JSON. 
+Minimalist portfolio basated in Json file. 
 
-Tecnologias utilizadas: • Astro
+Tecnologics: • Astro
              • Javascript
              • Css (Nativo)
              • HTLM 5
 
-Inspirado en:
+Inspiration:
              • Bartosz Jarocki
 
-Herramientas principales: 
+Principal tools: 
              • Schema JSON - Resume
              • "https://jsonresume.org/schema/"

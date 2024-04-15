@@ -32,17 +32,41 @@
         }
     ]
     },
-    "work": [{
+    "work": [
+      {
       "name": "Freelancer",
       "position": "programador Freelancer",
-      "url": "https://company.com",
+      "url": "",
       "startDate": "2022",
-      "endDate": "2024",
+      "endDate": "Actual",
       "summary": "Mi desempeño dentro de los diferentes trabajos era presentar soluciones de lógica y código a cada adversidad que se presentaba. Principalmente en la parte de fontend.",
       "highlights": [
         ""
       ]
-    }],
+    },
+    {
+      "name": "Dr. Mario IND",
+      "position": "Web Developer",
+      "url": "https://drmarioind.website",
+      "startDate": "2022",
+      "endDate": "Actual",
+      "summary": "Desarrollé la página de Dr Mario IND con el objetivo de recrear un e-commerce de prendas (Buzos) que contenga una pasarela de compra sencilla y práctica, con un estilo de aplicación móvil, a pesar de su adaptacion al desktop.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "D'leite Natural",
+      "position": "Web Developer",
+      "url": "https://dleite.com",
+      "startDate": "2024",
+      "endDate": "Actual",
+      "summary": "Llevé a cabo una web para optimizar las ventas de los principales productos de la marca. El objetivo es ofrecer una interface a modo de aplicación mobile para exponer las características y beneficios de estos productos. Además, de forma dinámica, mostrar el stock disponible. ",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
     "volunteer": [{
       "organization": "Organization",
       "position": "Volunteer",
@@ -56,6 +80,7 @@
     }],
     "education": [{
       "institution": "Universidad Nacional General Sarmiento",
+      "image":"https://www.estudiaradistancia.com.ar/logos/original/logo-universidad-nacional-de-general-sarmiento.png",
       "url": "https://www.ungs.edu.ar/",
       "area": "Lic. En sistemas",
       "studyType": "Carrera de grado",

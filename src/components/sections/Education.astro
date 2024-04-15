@@ -1,0 +1,81 @@
+---
+import {education} from '../../../cv.json'
+---
+<section>
+    <h3>Educación</h3>
+    <ul>
+        {
+            education.map(({institution, url, area, studyType, startDate, endDate, image}) => {
+                return(
+                    <li>
+                        <header>
+                            <div class="data">
+                                <a href={url} target="_blank">
+                                    <img src={image} alt={`Logo de ${institution}`}/>
+                                </a>
+                                <div>
+                                    <h4>{institution}</h4>
+                                    <h5>{area} - {studyType}</h5>    
+                                </div>
+                            </div>
+                            <div>
+                                <time datetime={startDate} data-title={startDate}>{startDate} - </time>
+                                <time datetime={endDate} data-title={endDate}>{endDate}</time>
+                            </div>
+                        </header>
+                    </li>
+                )
+            })
+        }
+    </ul>
+
+</section>
+
+<style>
+    header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    h4{
+        display: block;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+   
+
+    h5{
+        color: rgba(0, 0, 0, 0.75);
+        margin-bottom: .5em;
+        font-weight: 300;
+        font-size: 1.2em;
+
+    }
+
+    .data{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .data > a{
+        width: 5em;
+        border-radius: 20px;
+        transition: transform ease .1s;
+
+    }
+
+    a:hover{
+        color: rgba(0, 0, 0, 0.75);
+        transform: scale(1.05);
+    }
+
+    img{
+        width: 100%;
+        border-radius: 20px;
+
+    }
+</style>

@@ -1,0 +1,62 @@
+---
+import {skills} from '../../../cv.json'
+import GitHub from '../../icons/GitHub.astro'
+import React from '../../icons/react.astro'
+import HTML from '../../icons/html.astro'
+import CSS from '../../icons/css.astro'
+import Git from '../../icons/git.astro'
+import Node from '../../icons/node.astro'
+import SQL from '../../icons/sql.astro'
+import MySQL from '../../icons/mysql.astro'
+import Javascript from '../../icons/javascript.astro'
+
+const SKILLS_ICONS = {
+    HTML,
+    CSS,
+    Javascript,
+    React,
+    Node,
+    SQL, 
+    MySQL,
+    Git,
+    GitHub 
+}
+
+---
+
+<section>
+    <h3>Habilidades</h3>
+    <ul>
+        {
+            skills.map(({name})=>{
+                const iconName = (name === "JavaScript" ? "Javascript" : name)
+                const Icon = SKILLS_ICONS[iconName]
+                return(
+                    <li>    
+                        {Icon && <Icon/>} <span>{name}</span>
+                    </li>
+                )
+            })
+        }
+    </ul>
+</section>
+
+<style>
+    ul{
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: .2em;
+        font-size: 1.1em;
+        font-weight: 500;
+        padding: 5px 10px;
+        background-color: #0000000e;
+        border-radius: 10px;
+    }
+
+</style>

@@ -131,10 +131,10 @@
         ]
       },
       {
-        "name": "Tailwind",
+        "name": "SQL",
         "level": "Básico",
         "keywords": [
-          "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+          "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
         ]
       },
       {
@@ -195,22 +195,41 @@
     }],
     "projects": [{
       "name": "Dr. Mario IND",
+      "active": true,
+      "github": "",
       "startDate": "2021",
-      "endDate": "2024",
-      "description": "Dr. Mario IND es una página e-commerce sobre Buzos de distintas marcas. El objetivo de esta es conducir al usuario através de una interface persuasiva y amigable a una experiencia de compra única. Si bien es la versión beta, cuenta con multiples funcionalidades y un embudo de venta con lógica en orden de compra. Algo interesante a remarcar, no cuenta con pasarela de pagos, sino con un método mas clásico basado en el P2P.",
+      "endDate": "Actual",
+      "description": "E-commerce sobre Buzos de distintas marcas. Interface amigable con una experiencia de compra única.",
       "highlights": [
-        ""
+        "experiencia única",
+        "100% seguro",
+        "SPA"
       ],
       "url": "https://drmarioind.website"
     },
     {
         "name": "Gestor de Formularios",
+        "active": true,
+        "github": "",
         "startDate": "2022",
         "endDate": "2024",
-        "description": "Este gestor de formularios parte ante la necesidad de organizar cuestionarios (Encuestas) de google para una entidad pública de salud. El desarrollo de este proyecto iba adecuado a dos versiones, una simple de uso cotidiano, y una amplia con estadisticas y multiples funcionalidades de medición de datos.",
+        "description": "Organiza cuestionarios (Encuestas) de google (para una entidad pública de salud).",
         "highlights": [
-          ""
+          "Objetivo",
+          "SPA"
         ],
         "url": "https://encuenstassalud-b23a3e80-36f0-47c1-95.netlify.app"
-      }]
+      },
+      {
+          "name": "D'Leite - Natural",
+          "active": true,
+          "github": "https://github.com/GinoGC01/Dleite",
+          "startDate": "2024",
+          "endDate": "En desarrollo",
+          "description": "Página E-commerce sobre yogures naturales. Interface con carácter de la marca, amigable y agradable.",
+          "highlights": [
+          "100% funcional"
+          ],
+          "url": "https://github.com/GinoGC01/Dleite"
+        }]
   }

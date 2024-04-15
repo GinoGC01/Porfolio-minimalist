@@ -1,0 +1,127 @@
+---
+import {projects} from '../../../cv.json'
+import GitHub from '../../icons/GitHub.astro'
+
+---
+<section>
+    <h3>Proyectos</h3>
+    <ul>
+        {
+            projects.map(({name, description, highlights, url, active, github}) => {
+                return(
+                    <li>
+                        <article>                           
+                                <header>
+                                    <h4>
+                                        <a href={url} title={`ver proyecto ${name}`} target="_blank">
+                                            {name}
+                                        </a>
+                                        {active && <span>•</span>}
+                                        {github != "" && 
+                                            <a href={github} title={`repositorio de github del proyecto ${name}`} target="_blank">
+                                                <GitHub/>
+                                            </a>
+                                        }
+                                    </h4>
+                                    <p>{description}</p>
+                                </header>
+                                <footer>
+                                    <ul>
+                                        {
+                                            highlights.map(highlight => {
+                                                return(
+                                                    <li>{highlight}</li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                </footer>
+                        </article>   
+                    </li>
+                )
+            })
+        }
+    </ul>
+
+</section>
+
+<style>
+    ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1em;
+    }
+
+    article{
+        padding: 20px;
+        border: 1px solid #0000000e;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    header{
+        flex: 1;
+    }
+
+    h4{
+        font-size: 1.1em;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    h4 a{
+        transition: transform ease .1s;
+    }
+
+    h4 a:hover{
+        transform: scale(1.03);
+        color: #000000b2;
+    }
+
+    h4 span{
+        font-size: 1.2em;
+        animation: fliker 1.8s ease-in-out infinite;
+        color: rgb(31, 148, 31);
+    }
+
+    p{
+        font-size: .9em;
+    }
+
+    footer ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer ul li{
+        display: inline;
+        background-color: #0000000e;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: .9em;
+        color: #0000009f;
+    }
+
+    @keyframes fliker{
+        0%{
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        50%{
+            opacity: .25;
+            transform: scale(.9)
+        }
+
+        100%{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+
+</style>

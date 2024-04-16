@@ -68,4 +68,41 @@ const { title } = Astro.props;
 	a{
 		color: rgb(0, 0, 0);
 	}
+
+	@media (width <= 700px){
+		h1 {
+			font-size: 1.7em;
+		}
+
+		h2{
+			font-size: 1em;
+		}
+
+		h3{
+			font-size: 1.5em;
+		}
+
+		p, time{
+			font-size: .75em;
+		}
+
+	}
+
+	@media print {
+		h1{
+			font-size: 1.9em;
+		}
+
+		h2{
+			font-size: .9em;
+		}
+
+		h3{
+			font-size: 1.2em;
+		}
+
+		p, time{
+			font-size: .8em;
+		}
+	}
 </style>

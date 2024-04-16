@@ -19,7 +19,9 @@ const gitInfo = profiles.find(({network}) => network === 'GitHub')
 
 const gitUrl = gitInfo?.url
 
+const xInfo = profiles.find(({network}) => network === 'X')
 
+const xUrl = xInfo?.url
 ---
 <section>
     <div class="container">
@@ -32,33 +34,41 @@ const gitUrl = gitInfo?.url
             </span>
             <footer class="print">
                 <ul>
+                    <li><Phone/> {phone}</li>
+                    <li><Gmail/> {email}</li>
+                    <li><LinkedIn/> {linkedInfo.username}</li>
+                </ul>
+            </footer>
+            <footer class="web">
+                <ul>
                     <li>
-                        <a href={`${linkedUrl}`}>
+                        <a href={linkedUrl} target="_blank" title={`LinkedIn`}>
                             <LinkedIn/> 
                         </a>
                     </li>
                     <li>
-                        <a href={`${email}`}>
+                        <a href={`${email}`} target="_blank" title={`email`}>
                             <Gmail/>
                         </a>
                     </li>
                     <li>
-                        <a href={`${phone}`}>
+                        <a href={`${phone}`} target="_blank" title={`número de teléfono`}>
                             <Phone/>
                         </a>
                     </li>
                     <li>
-                        <a href={`${gitUrl}`}>
+                        <a href={gitUrl} target="_blank" title={`perfil de gitHub`}>
                             <GitHub/>
                         </a>
                     </li>
                     <li>
-                        <a href={`${X}`}>
+                        <a href={xUrl} target="_blank" title={`perdil de twitter`}>
                             <X/>
                         </a>
                     </li>
                 </ul>
             </footer>
+
         </div>
         <figure>
             <img src={image} alt=`${name} ${label}`>
@@ -84,23 +94,32 @@ const gitUrl = gitInfo?.url
         color:rgba(0, 0, 0, 0.65);
     }
 
-    ul{
+    .web > ul, .print > ul{
         display: flex;
         gap: .8em
     }
 
-    li{
+    .print > ul > li{
+        display: flex;
+        align-items: center;
+        gap: .3em;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .web > ul > li{
 
         border: 1px solid rgba(0, 0, 0, 0.05);
         border-radius: 5px;
         transition: background-color ease-in .1s ;
     }
 
-    li:hover{
+    .web > ul > li:hover{
         background-color:rgba(0, 0, 0, 0.05);
     }
 
-    li > a {
+    .web > ul > li > a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -110,15 +129,67 @@ const gitUrl = gitInfo?.url
         color: rgba(0, 0, 0, 0.65);
     }
 
-    footer{
+    .web, .print{
         margin-top: 20px;
     }
+
+    .print{
+        display: none;
+    }
+
 
     figure > img {
         border-radius: 20px;
         height: 160px;
         width: 160px;
         object-fit: cover;
+    }
+
+    @media (width <= 700px) {
+        
+        .container{
+            flex-direction: column-reverse;
+            gap: 1.5em;
+        }
+
+        .info{
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        span{
+            font-size: .8em;
+        }
+
+    }
+
+
+    @media print {
+
+        .web {
+            display: none;
+        }
+
+        .print{
+            display: block;
+        }
+
+        span{
+            font-size: .8em;
+        }
+
+        figure > img{
+            height: 130px;
+            width: 130px;
+        }
+
+        .print > ul > li{
+            font-size: .75em;
+        }
     }
 
 </style>

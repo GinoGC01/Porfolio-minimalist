@@ -1,0 +1,31 @@
+---
+import {basics} from '../../cv.json'
+import GitHub from '../icons/GitHub.astro'
+import X from '../icons/X.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
+
+const {profiles} = basics
+
+const SOCIAL_MEDIA = {
+GitHub,
+X,
+LinkedIn
+}
+
+---
+<section class="keyboardmang">
+    <h3>Keyboard - manager</h3>
+    <ul>
+        {profiles.map(({url, username, network})=>{
+            const iconSocialMedia = (network === "Github" ? "GitHub" : network)
+            const Icon = SOCIAL_MEDIA[iconSocialMedia]
+            return (<li>
+                <a href={url} title={`Red social ${network} de ${username}`} target="_blank">
+                    {Icon && <Icon/>} <span>{username}</span>
+                </a>
+            </li>)
+            
+        })}
+    </ul>
+</section>
+

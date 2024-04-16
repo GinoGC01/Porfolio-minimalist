@@ -6,16 +6,20 @@ import Experience from '../components/sections/Experience.astro';
 import About from '../components/sections/About.astro';
 import Skills from '../components/sections/Skills.astro';
 import Projects from '../components/sections/Projects.astro';
+import Keyboard from '../components/Keyboard.astro';
+
+import {basics} from '../../cv.json'
+const {name, label} = basics
 ---
 
-<Layout title="Portafolio - Gino Gabriel Ciancia">
+<Layout title=`Portafolio - ${name}, ${label}`>
 	<main>
 		<Hero />
 		<About />
+		<Skills />
 		<Experience />
 		<Education />
 		<Projects />
-		<Skills />
 	</main>
 </Layout>
 
@@ -27,6 +31,19 @@ import Projects from '../components/sections/Projects.astro';
 		display: flex;
 		flex-direction: column;
 		gap: 4em;
+	}
+
+	@media (width <= 700px){
+		main{
+			padding: 50px 10px;
+		}
+	}
+
+	@media print {
+		main{
+			padding: 0;
+			gap: 4.5em;
+		}
 	}
 
 

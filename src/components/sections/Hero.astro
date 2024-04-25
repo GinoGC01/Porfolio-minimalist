@@ -47,23 +47,18 @@ const xUrl = xInfo?.url
                         </a>
                     </li>
                     <li>
-                        <a href={`${email}`} target="_blank" title={`email`}>
+                        <a href={`mailto:${email}?subjetct=subject text`}  title={`${email}`}>
                             <Gmail/>
                         </a>
                     </li>
                     <li>
-                        <a href={`${phone}`} target="_blank" title={`número de teléfono`}>
+                        <button id="phone-button">
                             <Phone/>
-                        </a>
+                        </button>
                     </li>
                     <li>
                         <a href={gitUrl} target="_blank" title={`perfil de gitHub`}>
                             <GitHub/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href={xUrl} target="_blank" title={`perdil de twitter`}>
-                            <X/>
                         </a>
                     </li>
                 </ul>
@@ -75,6 +70,17 @@ const xUrl = xInfo?.url
         </figure>
     </div>
 </section>
+
+<script>
+const buttonPhone = document.getElementById('phone-button');
+    if (buttonPhone) {
+        buttonPhone.addEventListener('click', () => {
+            window.location.href = 'tel:+54 1140230671';
+        });
+    } else {
+        console.error('No se encontró el botón con el ID "phone-button"');
+    }
+</script>
 
 <style>
     .container{
@@ -99,6 +105,8 @@ const xUrl = xInfo?.url
         gap: .8em
     }
 
+    
+
     .print > ul > li{
         display: flex;
         align-items: center;
@@ -110,23 +118,30 @@ const xUrl = xInfo?.url
 
     .web > ul > li{
 
+        display: flex;
+        align-items: center;
         border: 1px solid rgba(0, 0, 0, 0.05);
         border-radius: 5px;
         transition: background-color ease-in .1s ;
+        cursor: pointer;
     }
 
     .web > ul > li:hover{
         background-color:rgba(0, 0, 0, 0.05);
     }
 
-    .web > ul > li > a {
+    button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .web > ul > li > a, button {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 2em;
-        height: 2em;
         margin: auto;
         color: rgba(0, 0, 0, 0.65);
+        padding: 10px;
     }
 
     .web, .print{

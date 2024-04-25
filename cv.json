@@ -2,7 +2,7 @@
     "basics": {
       "name": "Gino Gabriel Ciancia",
       "label": "Desarrollador Junior con más de un año de experiencia en la creación de proyectos de software",
-      "image": "https://media.licdn.com/dms/image/C4D03AQEa-PsojbOHnw/profile-displayphoto-shrink_200_200/0/1655133450330?e=1718841600&v=beta&t=Df6Q5KXPP4ZQp3-H1kJ_BfHhV02xyE34W31XTUxECcA",
+      "image": "./../images/perfil.jpg",
       "email": "ginociancia10@gmail.com",
       "phone": "(11) 4023-0671",
       "url": "https://johndoe.com",
@@ -58,7 +58,7 @@
     {
       "name": "D'leite Natural",
       "position": "Web Developer",
-      "url": "https://dleite.com",
+      "url": "https://github.com/GinoGC01/Dleite",
       "startDate": "2024",
       "endDate": "Actual",
       "summary": "Llevé a cabo una web para optimizar las ventas de los principales productos de la marca. El objetivo es ofrecer una interface a modo de aplicación móvil para exponer las características y beneficios de estos. Además, de forma dinámica, mostrar el stock disponible.",

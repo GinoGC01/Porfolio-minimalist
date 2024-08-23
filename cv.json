@@ -2,7 +2,7 @@
     "basics": {
       "name": "Gino Gabriel Ciancia",
       "label": "Desarrollador Junior con más de un año de experiencia en la creación de proyectos de software",
-      "image": "./../images/perfil.jpeg",
+      "image": "../images/perfil.webp",
       "email": "ginociancia10@gmail.com",
       "phone": "(11) 4023-0671",
       "url": "https://johndoe.com",
@@ -47,7 +47,7 @@
     {
       "name": "Dr. Mario IND",
       "position": "Web Developer",
-      "url": "https://drmarioind.website",
+      "url": "https://drmario-shop.netlify.app",
       "startDate": "2022",
       "endDate": "Actual",
       "summary": "Desarrollé la página de Dr Mario IND con el objetivo de recrear un e-commerce de prendas de ropa (Buzos) que contenga una pasarela de compra sencilla y práctica, con un estilo de aplicación para móvil, a pesar de su adaptacion al escritorio.",
@@ -62,6 +62,28 @@
       "startDate": "2024",
       "endDate": "Actual",
       "summary": "Llevé a cabo una web para optimizar las ventas de los principales productos de la marca. El objetivo es ofrecer una interface a modo de aplicación móvil para exponer las características y beneficios de estos. Además, de forma dinámica, mostrar el stock disponible.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "SenderEmail",
+      "position": "Developer",
+      "url": "https://github.com/GinoGC01/SenderMail",
+      "startDate": "2024",
+      "endDate": "Actual",
+      "summary": "Generé una aplicación, basada en modelo y controlador, para el backend con API REST. Y, para el frontend REACT. Esta aplicación, permite guardar, entre otras funciones, en bases de datos estudios jurídicos y enviar emails, dependiendo el motivo de la captación para vender o refactorizar una página web. ",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "Prototipo de página web (para estudios Jurídicos)",
+      "position": "Developer",
+      "url": "https://estudiojuridico-prototipo.netlify.app",
+      "startDate": "2024",
+      "endDate": "Actual",
+      "summary": "Este es un prototipo de página web para estudios jurídicos. El objetivo principal de este template, es mostrar de manera gráfica e intuitiva sus funcionalidades. Carece de contenido específico. ",
       "highlights": [
         ""
       ]
@@ -80,7 +102,7 @@
     }],
     "education": [{
       "institution": "Universidad Nacional General Sarmiento",
-      "image":"https://www.estudiaradistancia.com.ar/logos/original/logo-universidad-nacional-de-general-sarmiento.png",
+      "image":"../images/logo-universidad.webp",
       "url": "https://www.ungs.edu.ar/",
       "area": "Lic. En sistemas",
       "studyType": "Carrera de grado",
@@ -171,6 +193,13 @@
         "keywords": [
           "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
         ]
+      },
+      {
+        "name": "Astro",
+        "level": "medio",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "JavaScript Library", "UI", "Framework"
+        ]
       }
     ],
     "languages": [{
@@ -205,7 +234,7 @@
         "100% seguro",
         "SPA"
       ],
-      "url": "https://drmarioind.website"
+      "url": "https://drmario-shop.netlify.app"
     },
     {
         "name": "Gestor de Formularios",
@@ -231,5 +260,31 @@
           "100% funcional"
           ],
           "url": "https://github.com/GinoGC01/Dleite"
+        },
+        {
+          "name": "SenderEmail",
+          "active": true,
+          "github": "https://github.com/GinoGC01/SenderMail",
+          "startDate": "2024",
+          "endDate": "En desarrollo - version estable 0.01",
+          "description": "Plataforma para captación de clientes (Enfocada en estudios jurídicos)",
+          "highlights": [
+          "100% funcional",
+          "dinámico"
+          ],
+          "url": "https://github.com/GinoGC01/SenderMail"
+        },
+        {
+          "name": "Estudio Jurídico - example",
+          "active": true,
+          "github": "",
+          "startDate": "2024",
+          "endDate": "En desarrollo - version estable 0.01",
+          "description": "Página web para estudios jurídicos - template funcional",
+          "highlights": [
+          "intuitivo",
+          "dinámico"
+          ],
+          "url": "https://estudiojuridico-prototipo.netlify.app"
         }]
   }

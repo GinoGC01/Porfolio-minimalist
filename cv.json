@@ -1,12 +1,12 @@
 {
     "basics": {
       "name": "Gino Gabriel Ciancia",
-      "label": "Desarrollador Junior con más de un año de experiencia en la creación de proyectos de software",
+      "label": "Desarrollador web con más de un año de experiencia en la creación de proyectos de software",
       "image": "../images/perfil.webp",
       "email": "ginociancia10@gmail.com",
       "phone": "(11) 4023-0671",
       "url": "https://johndoe.com",
-      "summary": "Llevo mas de un año dedicandome a la programación a tiempo completo. Actualmente, estudio 'Lic. En sistemas' en la Universidad Nacional General Sarmiento, pero me considero un estudiante autodidacta. Vivo en Buenos Aires, Argentina. Mi objetivo es crecer profesionalemte en este mundo, y nunca dejar de aprender.",
+      "summary": "Llevo mas de un año dedicándome a la programación a tiempo completo. Actualmente, estudio 'Lic. En sistemas' en la Universidad Nacional General Sarmiento, pero me considero un estudiante autodidacta. Vivo en Buenos Aires, Argentina. Mi objetivo es crecer profesionalmente en este mundo, y nunca dejar de aprender.",
       "location": {
         "address": "Av. Hector Arregui 1413",
         "postalCode": "B 1665",

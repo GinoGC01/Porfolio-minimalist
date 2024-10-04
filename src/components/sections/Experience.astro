@@ -1,99 +1,99 @@
 ---
-import {work} from '../../../cv.json'
+import { work } from "../../../cv.json";
 ---
 
 <section>
-    <h3>Experiencias en proyectos</h3>
-    <ul>
-        {
-            work.map(({startDate, endDate, name, position, url, summary}) => {
-                return(
-                    <li>
-                         <article>
-                            <header>
-                                <div>
-                                    {
-                                    url == "" ? 
-                                    <h4>{name}</h4> 
-                                    :
-                                    <a href={url} target="_blank">{name}</a>
-                                    }
-                                    <h5>
-                                        {position}
-                                    </h5>
-                                </div>
-                                <div>
-                                    <time datetime={startDate} data-title={startDate}>{startDate} - </time>
-                                    <time datetime={endDate} data-title={endDate}>{endDate}</time>
-                                </div>
-                            </header>
-                            <p>
-                                {summary}
-                            </p>
-                        </article>
-                    </li>
-                )
-            })
-        }
-    </ul>
+  <h3>Experiencias laborales</h3>
+  <ul>
+    {
+      work.map(({ startDate, endDate, name, position, url, summary }) => {
+        return (
+          <li>
+            <article>
+              <header>
+                <div>
+                  {url == "" ? (
+                    <h4>{name}</h4>
+                  ) : (
+                    <a href={url} target="_blank">
+                      {name}
+                    </a>
+                  )}
+                  <h5>{position}</h5>
+                </div>
+                <div>
+                  <time datetime={startDate} data-title={startDate}>
+                    {startDate} -{" "}
+                  </time>
+                  <time datetime={endDate} data-title={endDate}>
+                    {endDate}
+                  </time>
+                </div>
+              </header>
+              <p>{summary}</p>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
 </section>
 
 <style>
-    
-    ul{
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-        width: 100%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 100%;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  h4,
+  a,
+  h5 {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: transform ease 0.1s;
+  }
+
+  a:hover {
+    color: rgba(0, 0, 0, 0.75);
+    transform: scale(1.05);
+  }
+
+  h5 {
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 0.5em;
+    font-weight: 300;
+  }
+
+  @media (width <= 700px) {
+    ul {
+      padding-top: 25px;
+    }
+    h5 {
+      font-size: 0.9em;
+    }
+  }
+
+  @media print {
+    h4 {
+      font-size: 1em;
     }
 
-    li{
-        width: 100%;
-
+    a,
+    h5 {
+      font-size: 0.9em;
     }
-
-    header{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    h4, a, h5{
-        display: block;
-        font-size: 1.2em;
-        font-weight: 600;
-        transition: transform ease .1s;
-    }
-
-    a:hover{
-        color: rgba(0, 0, 0, 0.75);
-        transform: scale(1.05);
-
-    }
-
-    h5{
-        color: rgba(0, 0, 0, 0.75);
-        margin-bottom: .5em;
-        font-weight: 300;
-    }
-
-    @media (width <= 700px){
-        ul{
-            padding-top: 25px;
-        }
-        h5{
-            font-size: .9em;
-        }
-    }
-
-    @media print{
-        h4{
-            font-size: 1em;
-        }
-        
-        a, h5{
-            font-size: .9em;
-        }
-
-    }
+  }
 </style>

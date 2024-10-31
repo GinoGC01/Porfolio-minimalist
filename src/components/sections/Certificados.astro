@@ -3,7 +3,7 @@ import { certificates } from "../../../cv.json";
 ---
 
 <section>
-  <h3>Certificados</h3>
+  <h3>{certificates.length > 1 ? "Certificados" : "Certificado"}</h3>
   <ul>
     {
       certificates?.map((certificate) => {
@@ -58,7 +58,7 @@ import { certificates } from "../../../cv.json";
     z-index: 1000;
     padding: 5px 10px;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: rgb(216, 216, 216);
     width: 100%;
     margin: 0;
     opacity: 0;
@@ -105,5 +105,27 @@ import { certificates } from "../../../cv.json";
   .name,
   span b {
     font-weight: bold;
+  }
+
+  @media print {
+    ul {
+      margin-bottom: 0;
+    }
+    li {
+      position: relative;
+      height: auto;
+    }
+
+    .data {
+      position: relative;
+      padding: 5px 0;
+      width: 100%;
+      opacity: 1;
+    }
+
+    a {
+      position: relative;
+      height: 100%;
+    }
   }
 </style>

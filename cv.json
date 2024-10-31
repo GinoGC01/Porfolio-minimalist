@@ -1,70 +1,64 @@
 {
-    "basics": {
-      "name": "Gino Gabriel Ciancia",
-      "label": "Desarrollador web con más de un año de experiencia en la creación de proyectos de software",
-      "image": "../images/perfil.webp",
-      "email": "ginociancia10@gmail.com",
-      "phone": "(11) 4023-0671",
-      "url": "https://johndoe.com",
-      "summary": "Llevo mas de un año dedicándome a la programación a tiempo completo. Actualmente, estudio 'Lic. En sistemas' en la Universidad Nacional General Sarmiento, pero me considero un estudiante autodidacta. Vivo en Buenos Aires, Argentina. Mi objetivo es crecer profesionalmente en este mundo, y nunca dejar de aprender.",
-      "location": {
-        "address": "Av. Hector Arregui 1413",
-        "postalCode": "B 1665",
-        "city": "José C. Paz",
-        "countryCode": "AR",
-        "region": "Buenos Aires, Argentina"
-      },
-      "profiles": [
-        {
-          "network": "X",
-          "username": "Gino",
-          "url": "https://x.com/Gino31674541"
-        },
-        {
-          "network": "LinkedIn",
-          "username": "Gino Ciancia",
-          "url": "https://www.linkedin.com/in/gino-ciancia-a4ab3b1a0"
-        },
-        {
-          "network": "GitHub",
-          "username": "GinoCG01",
-          "url": "https://github.com/GinoGC01"
-        }
-    ]
+  "basics": {
+    "name": "Gino Gabriel Ciancia",
+    "label": "Desarrollador web con más de un año de experiencia en la creación de proyectos de software",
+    "image": "../images/perfil.webp",
+    "email": "ginociancia10@gmail.com",
+    "phone": "(11) 4023-0671",
+    "url": "https://johndoe.com",
+    "summary": "Llevo mas de un año dedicándome a la programación a tiempo completo. Actualmente, estudio 'Lic. En sistemas' en la Universidad Nacional General Sarmiento, pero me considero un estudiante autodidacta. Vivo en Buenos Aires, Argentina. Mi objetivo es crecer profesionalmente en este mundo, y nunca dejar de aprender.",
+    "location": {
+      "address": "Av. Hector Arregui 1413",
+      "postalCode": "B 1665",
+      "city": "José C. Paz",
+      "countryCode": "AR",
+      "region": "Buenos Aires, Argentina"
     },
-    "work": [
+    "profiles": [
       {
+        "network": "X",
+        "username": "Gino",
+        "url": "https://x.com/Gino31674541"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Gino Ciancia",
+        "url": "https://www.linkedin.com/in/gino-ciancia-a4ab3b1a0"
+      },
+      {
+        "network": "GitHub",
+        "username": "GinoCG01",
+        "url": "https://github.com/GinoGC01"
+      }
+    ]
+  },
+  "work": [
+    {
       "name": "Freelancer",
       "position": "programador Freelancer",
       "url": "",
       "startDate": "2022",
       "endDate": "Actual",
       "summary": "Mi desempeño dentro de los diferentes trabajos es presentar soluciones de lógica y código limpio a cada adversidad que se presenta. Principalmente en la parte de fontend.",
-      "highlights": [
-        ""
-      ]
+      "highlights": [""]
     },
     {
       "name": "Dr. Mario IND",
       "position": "Web Developer",
       "url": "https://drmario-shop.netlify.app",
-      "startDate": "2022",
-      "endDate": "Actual",
+      "startDate": "2021",
+      "endDate": "2022",
       "summary": "Desarrollé la página de Dr Mario IND con el objetivo de recrear un e-commerce de prendas de ropa (Buzos) que contenga una pasarela de compra sencilla y práctica, con un estilo de aplicación para móvil, a pesar de su adaptacion al escritorio.",
-      "highlights": [
-        ""
-      ]
+      "highlights": [""]
     },
     {
       "name": "D'leite Natural",
       "position": "Web Developer",
       "url": "https://github.com/GinoGC01/Dleite",
       "startDate": "2024",
-      "endDate": "Actual",
+      "endDate": "2024",
       "summary": "Llevé a cabo una web para optimizar las ventas de los principales productos de la marca. El objetivo es ofrecer una interface a modo de aplicación móvil para exponer las características y beneficios de estos. Además, de forma dinámica, mostrar el stock disponible.",
-      "highlights": [
-        ""
-      ]
+      "highlights": [""]
     },
     {
       "name": "SenderEmail",
@@ -73,9 +67,7 @@
       "startDate": "2024",
       "endDate": "Actual",
       "summary": "Generé una aplicación, basada en modelo y controlador, para el backend con API REST. Y, para el frontend REACT. Esta aplicación, permite guardar, entre otras funciones, en bases de datos estudios jurídicos y enviar emails, dependiendo el motivo de la captación para vender o refactorizar una página web. ",
-      "highlights": [
-        ""
-      ]
+      "highlights": [""]
     },
     {
       "name": "Prototipo de página web (para estudios Jurídicos)",
@@ -84,25 +76,24 @@
       "startDate": "2024",
       "endDate": "Actual",
       "summary": "Este es un prototipo de página web para estudios jurídicos. El objetivo principal de este template, es mostrar de manera gráfica e intuitiva sus funcionalidades. Carece de contenido específico. ",
-      "highlights": [
-        ""
-      ]
+      "highlights": [""]
     }
   ],
-    "volunteer": [{
+  "volunteer": [
+    {
       "organization": "Organization",
       "position": "Volunteer",
       "url": "https://organization.com/",
       "startDate": "2012-01-01",
       "endDate": "2013-01-01",
       "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }],
-    "education": [{
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
       "institution": "Universidad Nacional General Sarmiento",
-      "image":"../images/logo-universidad.webp",
+      "image": "../images/logo-universidad.webp",
       "url": "https://www.ungs.edu.ar/",
       "area": "Lic. En sistemas",
       "studyType": "Carrera de grado",
@@ -110,99 +101,119 @@
       "endDate": "Actual",
       "score": "",
       "courses": []
-    }],
-    "awards": [{
+    }
+  ],
+  "awards": [
+    {
       "title": "",
       "date": "",
       "awarder": "",
       "summary": ""
-    }],
-    "certificates": [{
-      "name": "",
-      "date": "",
-      "issuer": "",
-      "url": ""
-    }],
-    "publications": [{
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Back end Development and APIs",
+      "date": "2024",
+      "issuer": "FreeCodeCamp",
+      "url": "https://www.freecodecamp.org/certification/Gino01/back-end-development-and-apis",
+      "img": "./../images/certificado-backend.png"
+    }
+  ],
+  "publications": [
+    {
       "name": "Publication",
       "publisher": "Company",
       "releaseDate": "2014-10-01",
       "url": "https://publication.com",
       "summary": "Description…"
-    }],
-    "skills": [
-      {
-        "name": "HTML",
-        "level": "Avanzado",
-        "keywords": [
-          "Desarrollo Web", "Frontend"
-        ]
-      },
-      {
-        "name": "CSS",
-        "level": "Avanzado",
-        "keywords": [
-          "Desarrollo Web", "Frontend", "Diseño Responsive"
-        ]
-      },
-      {
-        "name": "JavaScript",
-        "level": "Avanzado",
-        "keywords": [
-          "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-        ]
-      },
-      {
-        "name": "SQL",
-        "level": "Básico",
-        "keywords": [
-          "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
-        ]
-      },
-      {
-        "name": "Node",
-        "level": "Básico",
-        "keywords": [
-          "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-        ]
-      },
-      {
-        "name": "MySQL",
-        "level": "Básico",
-        "keywords": [
-          "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
-        ]
-      },
-      {
-        "name": "Git",
-        "level": "Avanzado",
-        "keywords": [
-          "Control de Versiones", "Colaboración", "Código Fuente"
-        ]
-      },
-      {
-        "name": "GitHub",
-        "level": "Avanzado",
-        "keywords": [
-          "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-        ]
-      },
-      {
-        "name": "React",
-        "level": "Avanzado",
-        "keywords": [
-          "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
-        ]
-      },
-      {
-        "name": "Astro",
-        "level": "medio",
-        "keywords": [
-          "Desarrollo Web", "Frontend", "JavaScript Library", "UI", "Framework"
-        ]
-      }
-    ],
-    "languages": [{
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "SQL",
+      "level": "Medio",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Básico",
+      "keywords": [
+        "Bases de Datos",
+        "Mongo DB",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Medio",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Básico",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermedio",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermedio",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    },
+    {
+      "name": "Astro",
+      "level": "Medio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI",
+        "Framework"
+      ]
+    }
+  ],
+  "languages": [
+    {
       "language": "Español",
       "fluency": "Idioma Nativo"
     },
@@ -210,81 +221,69 @@
       "language": "Inglés",
       "fluency": "B1"
     }
-],
-    "interests": [{
+  ],
+  "interests": [
+    {
       "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }],
-    "references": [{
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
       "name": "Jane Doe",
       "reference": "Reference…"
-    }],
-    "projects": [{
+    }
+  ],
+  "projects": [
+    {
       "name": "Dr. Mario IND",
       "active": true,
       "github": "",
       "startDate": "2021",
-      "endDate": "Actual",
+      "endDate": "2021",
       "description": "E-commerce sobre Buzos de distintas marcas. Interface amigable con una experiencia de compra única.",
-      "highlights": [
-        "experiencia única",
-        "100% seguro",
-        "SPA"
-      ],
+      "highlights": ["React", "JS", "CSS NATIVE", "VITE", "SPA"],
       "url": "https://drmario-shop.netlify.app"
     },
     {
-        "name": "Gestor de Formularios",
-        "active": true,
-        "github": "",
-        "startDate": "2022",
-        "endDate": "2024",
-        "description": "Organiza cuestionarios (Encuestas) de google (para una entidad pública de salud).",
-        "highlights": [
-          "Objetivo",
-          "SPA"
-        ],
-        "url": "https://encuenstassalud-b23a3e80-36f0-47c1-95.netlify.app"
-      },
-      {
-          "name": "D'Leite - Natural",
-          "active": true,
-          "github": "https://github.com/GinoGC01/Dleite",
-          "startDate": "2024",
-          "endDate": "En desarrollo",
-          "description": "Página E-commerce sobre yogures naturales. Interface con carácter de la marca, amigable y agradable.",
-          "highlights": [
-          "100% funcional"
-          ],
-          "url": "https://github.com/GinoGC01/Dleite"
-        },
-        {
-          "name": "SenderEmail",
-          "active": true,
-          "github": "https://github.com/GinoGC01/SenderMail",
-          "startDate": "2024",
-          "endDate": "En desarrollo - version estable 0.01",
-          "description": "Plataforma para captación de clientes (Enfocada en estudios jurídicos)",
-          "highlights": [
-          "100% funcional",
-          "dinámico"
-          ],
-          "url": "https://github.com/GinoGC01/SenderMail"
-        },
-        {
-          "name": "Estudio Jurídico - example",
-          "active": true,
-          "github": "",
-          "startDate": "2024",
-          "endDate": "En desarrollo - version estable 0.01",
-          "description": "Página web para estudios jurídicos - template funcional",
-          "highlights": [
-          "intuitivo",
-          "dinámico"
-          ],
-          "url": "https://estudiojuridico-prototipo.netlify.app"
-        }]
-  }
+      "name": "Gestor de Formularios",
+      "active": true,
+      "github": "",
+      "startDate": "2022",
+      "endDate": "2024",
+      "description": "Organiza cuestionarios (Encuestas) de google (para una entidad pública de salud).",
+      "highlights": ["REACT", "JS", "CSS NATIVE", "VITE", "SPA"],
+      "url": "https://encuenstassalud-b23a3e80-36f0-47c1-95.netlify.app"
+    },
+    {
+      "name": "D'Leite - Natural",
+      "active": true,
+      "github": "https://github.com/GinoGC01/Dleite",
+      "startDate": "2024",
+      "endDate": "2024",
+      "description": "Página E-commerce sobre yogures naturales. Interface con carácter de la marca, amigable y agradable.",
+      "highlights": ["ASTRO", "CSS NATIVE", "VITE"],
+      "url": "https://github.com/GinoGC01/Dleite"
+    },
+    {
+      "name": "SenderEmail",
+      "active": true,
+      "github": "https://github.com/GinoGC01/SenderMail",
+      "startDate": "2024",
+      "endDate": "En desarrollo - version estable 0.01",
+      "description": "Plataforma para captación de clientes (Enfocada en estudios jurídicos)",
+      "highlights": ["REACT", "SQL", "CSS", "NODE", "SPA", "EXPRESS", "MYSQL"],
+      "url": "https://github.com/GinoGC01/SenderMail"
+    },
+    {
+      "name": "Estudio Jurídico - example",
+      "active": true,
+      "github": "",
+      "startDate": "2024",
+      "endDate": "En desarrollo - version estable 0.01",
+      "description": "Página web para estudios jurídicos - template funcional",
+      "highlights": ["ASTRO", "CSS NATIVE", "VITE"],
+      "url": "https://estudiojuridico-prototipo.netlify.app"
+    }
+  ]
+}

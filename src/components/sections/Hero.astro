@@ -1,210 +1,217 @@
 ---
-import {basics} from '../../../cv.json'
-import WorldMap from '../../icons/WorldMap.astro'
-import GitHub from '../../icons/GitHub.astro'
-import LinkedIn from '../../icons/LinkedIn.astro'
-import X from '../../icons/X.astro'
-import Gmail from '../../icons/Mail.astro'
-import Phone from '../../icons/Phone.astro'
+import { basics } from "../../../cv.json";
+import WorldMap from "../../icons/WorldMap.astro";
+import GitHub from "../../icons/GitHub.astro";
+import LinkedIn from "../../icons/LinkedIn.astro";
+import X from "../../icons/X.astro";
+import Gmail from "../../icons/Mail.astro";
+import Phone from "../../icons/Phone.astro";
 
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
 
-const {name, label, image, location, profiles, phone, email} = basics
-const {city, region} = location
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
 
-const linkedInfo = profiles.find(({network}) => network === 'LinkedIn')
+const linkedUrl = linkedInfo?.url;
 
-const linkedUrl = linkedInfo?.url
+const gitInfo = profiles.find(({ network }) => network === "GitHub");
 
-const gitInfo = profiles.find(({network}) => network === 'GitHub')
+const gitUrl = gitInfo?.url;
 
-const gitUrl = gitInfo?.url
+const xInfo = profiles.find(({ network }) => network === "X");
 
-const xInfo = profiles.find(({network}) => network === 'X')
-
-const xUrl = xInfo?.url
+const xUrl = xInfo?.url;
 ---
-<section>
-    <div class="container">
-        <div class="info">
-            <h1>{name}</h1>
-            <h2>{label}</h2>
-            <span>
-                <WorldMap/>
-                {city}, {region}
-            </span>
-            <footer class="print">
-                <ul>
-                    <li><Phone/> {phone}</li>
-                    <li><Gmail/> {email}</li>
-                    <li><LinkedIn/> {linkedInfo.username}</li>
-                </ul>
-            </footer>
-            <footer class="web">
-                <ul>
-                    <li>
-                        <a href={linkedUrl} target="_blank" title={`LinkedIn`}>
-                            <LinkedIn/> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href={`mailto:${email}?subjetct=subject text`}  title={`${email}`}>
-                            <Gmail/>
-                        </a>
-                    </li>
-                    <li>
-                        <button id="phone-button">
-                            <Phone/>
-                        </button>
-                    </li>
-                    <li>
-                        <a href={gitUrl} target="_blank" title={`perfil de gitHub`}>
-                            <GitHub/>
-                        </a>
-                    </li>
-                </ul>
-            </footer>
 
-        </div>
-        <figure>
-            <img src={image} alt=`${name} ${label}`>
-        </figure>
+<section>
+  <div class="container">
+    <div class="info">
+      <h1>{name}</h1>
+      <h2>{label}</h2>
+      <span>
+        <WorldMap />
+        {city}, {region}
+      </span>
+      <footer class="print">
+        <ul>
+          <li><Phone /> {phone}</li>
+          <li><Gmail /> {email}</li>
+          <li>
+            <a href={linkedUrl} target="_blank" title={`LinkedIn`}>
+              <LinkedIn />
+              {linkedInfo.username}
+            </a>
+          </li>
+        </ul>
+      </footer>
+      <footer class="web">
+        <ul>
+          <li>
+            <a href={linkedUrl} target="_blank" title={`LinkedIn`}>
+              <LinkedIn />
+            </a>
+          </li>
+          <li>
+            <a
+              href={`mailto:${email}?subjetct=subject text`}
+              title={`${email}`}
+            >
+              <Gmail />
+            </a>
+          </li>
+          <li>
+            <button id="phone-button">
+              <Phone />
+            </button>
+          </li>
+          <li>
+            <a href={gitUrl} target="_blank" title={`perfil de gitHub`}>
+              <GitHub />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
+    <figure>
+      <img src={image} alt=`${name} ${label}` />
+    </figure>
+  </div>
 </section>
 
 <script>
-const buttonPhone = document.getElementById('phone-button');
-    if (buttonPhone) {
-        buttonPhone.addEventListener('click', () => {
-            window.location.href = 'tel:+54 1140230671';
-        });
-    } else {
-        console.error('No se encontró el botón con el ID "phone-button"');
-    }
+  const buttonPhone = document.getElementById("phone-button");
+  if (buttonPhone) {
+    buttonPhone.addEventListener("click", () => {
+      window.location.href = "tel:+54 1140230671";
+    });
+  } else {
+    console.error('No se encontró el botón con el ID "phone-button"');
+  }
 </script>
 
 <style>
-    .container{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  span {
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .web > ul,
+  .print > ul {
+    display: flex;
+    gap: 0.8em;
+  }
+
+  .print > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .print > ul > li a {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+  }
+
+  .web > ul > li {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    transition: background-color ease-in 0.1s;
+    cursor: pointer;
+  }
+
+  .web > ul > li:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .web > ul > li > a,
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: rgba(0, 0, 0, 0.65);
+    padding: 10px;
+  }
+
+  .web,
+  .print {
+    margin-top: 20px;
+  }
+
+  .print {
+    display: none;
+  }
+
+  figure > img {
+    border-radius: 20px;
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+  }
+
+  @media (width <= 700px) {
+    .container {
+      flex-direction: column-reverse;
+      gap: 1.5em;
     }
 
-    .info{
-        display: flex;
-        flex-direction: column;
-        gap: .5em;
+    .info {
+      justify-content: center;
+      align-items: center;
     }
 
-    span{
-        color:rgba(0, 0, 0, 0.65);
+    h2 {
+      text-align: center;
     }
 
-    .web > ul, .print > ul{
-        display: flex;
-        gap: .8em
+    span {
+      font-size: 0.8em;
+    }
+  }
+
+  @media print {
+    .web {
+      display: none;
     }
 
-    
-
-    .print > ul > li{
-        display: flex;
-        align-items: center;
-        gap: .3em;
-        padding: 5px 10px;
-        border-radius: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.05);
+    .print {
+      display: block;
     }
 
-    .web > ul > li{
-
-        display: flex;
-        align-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
-        transition: background-color ease-in .1s ;
-        cursor: pointer;
+    span {
+      font-size: 0.8em;
     }
-
-    .web > ul > li:hover{
-        background-color:rgba(0, 0, 0, 0.05);
-    }
-
-    button{
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-    }
-    .web > ul > li > a, button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        color: rgba(0, 0, 0, 0.65);
-        padding: 10px;
-    }
-
-    .web, .print{
-        margin-top: 20px;
-    }
-
-    .print{
-        display: none;
-    }
-
 
     figure > img {
-        border-radius: 20px;
-        height: 160px;
-        width: 160px;
-        object-fit: cover;
+      height: 130px;
+      width: 130px;
     }
 
-    @media (width <= 700px) {
-        
-        .container{
-            flex-direction: column-reverse;
-            gap: 1.5em;
-        }
-
-        .info{
-            justify-content: center;
-            align-items: center;
-        }
-
-        h2{
-            text-align: center;
-        }
-
-        span{
-            font-size: .8em;
-        }
-
+    .print > ul > li {
+      font-size: 0.75em;
     }
-
-
-    @media print {
-
-        .web {
-            display: none;
-        }
-
-        .print{
-            display: block;
-        }
-
-        span{
-            font-size: .8em;
-        }
-
-        figure > img{
-            height: 130px;
-            width: 130px;
-        }
-
-        .print > ul > li{
-            font-size: .75em;
-        }
-    }
-
+  }
 </style>

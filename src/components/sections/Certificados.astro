@@ -34,7 +34,6 @@ import { certificates } from "../../../cv.json";
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 0.5em;
-    align-content: center;
     margin-bottom: 50px;
   }
 
@@ -42,6 +41,7 @@ import { certificates } from "../../../cv.json";
     position: relative;
     height: 200px;
     z-index: 2000;
+    width: 100%;
   }
 
   li,
@@ -105,6 +105,12 @@ import { certificates } from "../../../cv.json";
   .name,
   span b {
     font-weight: bold;
+  }
+
+  @media (width < 700px) {
+    li {
+      height: 250px;
+    }
   }
 
   @media print {

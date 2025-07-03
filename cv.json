@@ -34,6 +34,24 @@
   },
   "work": [
     {
+      "name": "Sistema de Turnos Médicos ",
+      "position": "programador Full-Stack",
+      "url": "",
+      "startDate": "2025",
+      "endDate": "En desarrollo",
+      "summary": "Estoy desarrollando una aplicacion full stack para gestión de turnos médicos, pagos y notificaciones. Con Autenticación de usuarios, integración con Mercado Pago, guardado automático en Google Sheets y notificación por email ",
+      "highlights": [""]
+    },
+    {
+      "name": "Gestor de Gastos Familiares ",
+      "position": "programador Full-Stack",
+      "url": "",
+      "startDate": "2025",
+      "endDate": "En desarrollo",
+      "summary": "Estoy desarrollando una Aplicación web para la gestión de gastos compartidos. Con Registro de gastos, login, gestión por categorías y generación de informes.",
+      "highlights": [""]
+    },
+    {
       "name": "Freelancer",
       "position": "programador Freelancer",
       "url": "",
@@ -157,7 +175,7 @@
     },
     {
       "name": "MongoDB",
-      "level": "Básico",
+      "level": "Medio",
       "keywords": [
         "Bases de Datos",
         "Mongo DB",
@@ -169,6 +187,11 @@
       "name": "Node",
       "level": "Medio",
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+    },
+    {
+      "name": "Express",
+      "level": "Medio",
+      "keywords": ["Backend", "JavaScript", "Servidor"]
     },
     {
       "name": "MySQL",
@@ -235,6 +258,29 @@
     }
   ],
   "projects": [
+     {
+      "name": "Sistema de Turnos Médicos ",
+      "active": true,
+      "position": "programador Full-Stack",
+      "github": "https://github.com/GinoGC01/turnoMedicos-System-Front ",
+      
+      "url": "",
+      "startDate": "2025",
+      "endDate": "En desarrollo",
+      "description": "Aplicacion full stack para gestión de turnos médicos, pagos y notificaciones.",
+      "highlights": ["Node.js", "React", "MongoDB", "Google API", "Mercado Pago SDK "]
+    },
+    {
+      "name": "Gestor de Gastos Familiares ",
+      "active": true,
+      "github": "https://github.com/GinoGC01/gastos-backend ",
+      "position": "programador Full-Stack",
+      "url": "",
+      "startDate": "2025",
+      "endDate": "En desarrollo",
+      "description": "Aplicación web para la gestión de gastos compartidos. ",
+      "highlights": ["Node.js", "React", "MongoDB"]
+    },
     {
       "name": "Dr. Mario IND",
       "active": true,
@@ -272,7 +318,7 @@
       "startDate": "2024",
       "endDate": "En desarrollo - version estable 0.01",
       "description": "Plataforma para captación de clientes (Enfocada en estudios jurídicos)",
-      "highlights": ["REACT", "SQL", "CSS", "NODE", "SPA", "EXPRESS", "MYSQL"],
+      "highlights": ["REACT", "SQL", "CSS", "NODE", "EXPRESS", "MYSQL"],
       "url": "https://github.com/GinoGC01/SenderMail"
     },
     {

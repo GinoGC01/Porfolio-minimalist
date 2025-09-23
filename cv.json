@@ -32,13 +32,30 @@
       }
     ]
   },
-  "work": [
+  "work": [{
+      "name": "AuditAi",
+      "position": "programador Full-Stack",
+      "url": "",
+      "startDate": "2025",
+      "endDate": "Actual",
+      "summary": "Desarrolle el MVP de un Agente de IA para el analisis de estados contables, extraccion de datos (ingresos, egresos, impuestos, retenciones...) y generación de reportes automáticos. Con un sistema RAG y base de datos vectorial para la generación de informes en lenguaje natural.",
+      "highlights": [""]
+    },
+    {
+      "name": "AuditAi-Site",
+      "position": "programador Full-Stack",
+      "url": "",
+      "startDate": "2025",
+      "endDate": "Actual",
+      "summary": "Pagina web de AuditAi. Con sección de Uso (DEMO), Funciones, Contacto y Descripción de servicios.",
+      "highlights": [""]
+    },
     {
       "name": "Sistema de Turnos Médicos ",
       "position": "programador Full-Stack",
       "url": "",
       "startDate": "2025",
-      "endDate": "En desarrollo",
+      "endDate": "Actual",
       "summary": "Estoy desarrollando una aplicacion full stack para gestión de turnos médicos, pagos y notificaciones. Con Autenticación de usuarios, integración con Mercado Pago, guardado automático en Google Sheets y notificación por email ",
       "highlights": [""]
     },
@@ -47,7 +64,7 @@
       "position": "programador Full-Stack",
       "url": "",
       "startDate": "2025",
-      "endDate": "En desarrollo",
+      "endDate": "Actual",
       "summary": "Estoy desarrollando una Aplicación web para la gestión de gastos compartidos. Con Registro de gastos, login, gestión por categorías y generación de informes.",
       "highlights": [""]
     },
@@ -58,42 +75,6 @@
       "startDate": "2022",
       "endDate": "Actual",
       "summary": "Mi desempeño dentro de los diferentes trabajos es presentar soluciones de lógica y código limpio a cada adversidad que se presenta. Principalmente en la parte de fontend.",
-      "highlights": [""]
-    },
-    {
-      "name": "Dr. Mario IND",
-      "position": "Web Developer",
-      "url": "https://drmario-shop.netlify.app",
-      "startDate": "2021",
-      "endDate": "2022",
-      "summary": "Desarrollé la página de Dr Mario IND con el objetivo de recrear un e-commerce de prendas de ropa (Buzos) que contenga una pasarela de compra sencilla y práctica, con un estilo de aplicación para móvil, a pesar de su adaptacion al escritorio.",
-      "highlights": [""]
-    },
-    {
-      "name": "D'leite Natural",
-      "position": "Web Developer",
-      "url": "https://github.com/GinoGC01/Dleite",
-      "startDate": "2024",
-      "endDate": "2024",
-      "summary": "Llevé a cabo una web para optimizar las ventas de los principales productos de la marca. El objetivo es ofrecer una interface a modo de aplicación móvil para exponer las características y beneficios de estos. Además, de forma dinámica, mostrar el stock disponible.",
-      "highlights": [""]
-    },
-    {
-      "name": "SenderEmail",
-      "position": "Developer",
-      "url": "https://github.com/GinoGC01/SenderMail",
-      "startDate": "2024",
-      "endDate": "Actual",
-      "summary": "Generé una aplicación, basada en modelo y controlador, para el backend con API REST. Y, para el frontend REACT. Esta aplicación, permite guardar, entre otras funciones, en bases de datos estudios jurídicos y enviar emails, dependiendo el motivo de la captación para vender o refactorizar una página web. ",
-      "highlights": [""]
-    },
-    {
-      "name": "Prototipo de página web (para estudios Jurídicos)",
-      "position": "Developer",
-      "url": "https://estudiojuridico-prototipo.netlify.app",
-      "startDate": "2024",
-      "endDate": "Actual",
-      "summary": "Este es un prototipo de página web para estudios jurídicos. El objetivo principal de este template, es mostrar de manera gráfica e intuitiva sus funcionalidades. Carece de contenido específico. ",
       "highlights": [""]
     }
   ],
@@ -225,13 +206,23 @@
     },
     {
       "name": "Astro",
-      "level": "Medio",
+      "level": "Intermedio",
       "keywords": [
         "Desarrollo Web",
         "Frontend",
         "JavaScript Library",
         "UI",
         "Framework"
+      ]
+    },
+      {
+      "name": "Tailwind",
+      "level": "Básico",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Css Library",
+        "UI"
       ]
     }
   ],

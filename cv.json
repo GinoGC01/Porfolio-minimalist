@@ -117,6 +117,13 @@
       "issuer": "FreeCodeCamp",
       "url": "https://www.freecodecamp.org/certification/Gino01/back-end-development-and-apis",
       "img": "./../images/certificado-backend.png"
+    },
+    {
+      "name": "Inteligencia Artificial",
+      "date": "2025",
+      "issuer": "Big School",
+      "url": "https://thebigschool.com/",
+      "img": "./../images/ia-curso.png"
     }
   ],
   "publications": [
@@ -249,10 +256,32 @@
     }
   ],
   "projects": [
+      {
+        "name": "AuditAi",
+        "active": true,
+        "position": "Desarrollador Full-Stack",
+        "github": "",
+        "url": "https://t.me/ClariTaxBot",
+        "startDate": "2025",
+        "endDate": "Demo publicada",
+        "description": "Asistente de contador digital impulsado por IA para análisis de estados contables, extracción de datos y generación de reportes automáticos.",
+        "highlights": ["Node.js", "RAG System", "Postgres SQL", "Telegram API", "OpenAI API", "Vectorial DB", "LangChain", "Pinecone", "IA"]
+      },
+      {
+        "name": "AuditAi Page",
+        "active": true,
+        "position": "Desarrollador Full-Stack",
+        "github": "",
+        "url": "https://auditAi.ginociancia.fun",
+        "startDate": "2025",
+        "endDate": "producción",
+        "description": "Pagina web de AuditAi. Con sección de Uso (DEMO), Funciones, Contacto y Descripción de servicios.",
+        "highlights": ["Astro", "CSS NATIVE", "VITE", "SPA", "Frontend", "View Transitions API"]
+      },
      {
       "name": "Sistema de Turnos Médicos ",
       "active": true,
-      "position": "programador Full-Stack",
+      "position": "Desarrollador Full-Stack",
       "github": "https://github.com/GinoGC01/turnoMedicos-System-Front ",
       
       "url": "",
@@ -262,7 +291,7 @@
       "highlights": ["Node.js", "React", "MongoDB", "Google API", "Mercado Pago SDK "]
     },
     {
-      "name": "Gestor de Gastos Familiares ",
+      "name": "Desarrollador Full-Stack",
       "active": true,
       "github": "https://github.com/GinoGC01/gastos-backend ",
       "position": "programador Full-Stack",
@@ -274,7 +303,7 @@
     },
     {
       "name": "Dr. Mario IND",
-      "active": true,
+      "active": false,
       "github": "",
       "startDate": "2021",
       "endDate": "2021",
@@ -284,7 +313,7 @@
     },
     {
       "name": "Gestor de Formularios",
-      "active": true,
+      "active": false,
       "github": "",
       "startDate": "2022",
       "endDate": "2024",
@@ -294,7 +323,7 @@
     },
     {
       "name": "D'Leite - Natural",
-      "active": true,
+      "active": false,
       "github": "https://github.com/GinoGC01/Dleite",
       "startDate": "2024",
       "endDate": "2024",
@@ -304,7 +333,7 @@
     },
     {
       "name": "SenderEmail",
-      "active": true,
+      "active": false,
       "github": "https://github.com/GinoGC01/SenderMail",
       "startDate": "2024",
       "endDate": "En desarrollo - version estable 0.01",
@@ -314,7 +343,7 @@
     },
     {
       "name": "Estudio Jurídico - example",
-      "active": true,
+      "active": false,
       "github": "",
       "startDate": "2024",
       "endDate": "En desarrollo - version estable 0.01",

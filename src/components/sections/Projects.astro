@@ -8,11 +8,11 @@ import GitHub from '../../icons/GitHub.astro'
         {
             projects.map(({name, description, highlights, url, active, github}) => {
                 return(
-                    <li>
+                    active && <li>
                         <article>                           
                                 <header>
                                     <h4>
-                                        <a href={url} title={`ver proyecto ${name}`} target="_blank">
+                                        <a href={url != "" ? url : github} title={`ver proyecto ${name}`} target="_blank">
                                             {name}
                                         </a>
                                         {active && <span>•</span>}
@@ -51,6 +51,13 @@ import GitHub from '../../icons/GitHub.astro'
         gap: 1em;
     }
 
+    section > ul > li{
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+
+    }
+
     article{
         padding: 20px;
         border: 1px solid #0000000e;
@@ -59,6 +66,27 @@ import GitHub from '../../icons/GitHub.astro'
         gap: 1em;
         height: 250px;
         border-radius: 10px;
+        overflow-y: scroll;
+    }
+
+    /* width */
+    article::-webkit-scrollbar {
+    width: 3px;
+    }
+
+    /* Track */
+    article::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    }
+
+    /* Handle */
+    article::-webkit-scrollbar-thumb {
+    background: #888;
+    }
+
+    /* Handle on hover */
+    article::-webkit-scrollbar-thumb:hover {
+    background: #555;
     }
 
     header{

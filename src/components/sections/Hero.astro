@@ -27,6 +27,7 @@ const xUrl = xInfo?.url;
     <div class="info">
       <h1>{name}</h1>
       <h2>{label}</h2>
+      <p>Si puedes imaginarlo, puedes programarlo</p>
       <span>
         <WorldMap />
         {city}, {region}
@@ -108,8 +109,15 @@ const xUrl = xInfo?.url;
     gap: 0.5em;
   }
 
+  .info > p{
+    font-style: italic;
+    font-weight: normal;
+    font-size: small;
+  }
+
   span {
     color: rgba(0, 0, 0, 0.65);
+    margin-top: 20px;
   }
 
   .web > ul,

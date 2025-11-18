@@ -114,7 +114,14 @@ import { certificates } from "../../../cv.json";
   @media (width < 700px) {
     li {
       height: 250px;
+      overflow: hidden;
     }
+
+    li:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    scale: 1.02;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
   }
 
   @media print {

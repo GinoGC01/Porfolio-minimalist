@@ -33,7 +33,7 @@ import { certificates } from "../../../cv.json";
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 0.5em;
+    gap: 0.8em;
     margin-bottom: 50px;
   }
 
@@ -42,6 +42,8 @@ import { certificates } from "../../../cv.json";
     height: 200px;
     z-index: 2000;
     width: 100%;
+    border-radius: 5px;
+    transition: scale .2s ;
   }
 
   li,
@@ -90,6 +92,8 @@ import { certificates } from "../../../cv.json";
 
   li:hover {
     border: 1px solid rgba(0, 0, 0, 0.5);
+    scale: 1.05;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
 
   li:hover .data {

@@ -3,10 +3,10 @@ import {projects} from '../../../cv.json'
 import GitHub from '../../icons/GitHub.astro'
 ---
 <section>
-    <h3>Proyectos</h3>
+    <h3>Proyectos Relevantes</h3>
     <ul>
         {
-            projects.map(({name, description, highlights, url, active, github}) => {
+            projects.map(({name, description, highlights, url, active, github, isActiveAndUpdating}) => {
                 return(
                     active && <li>
                         <article>                           
@@ -15,15 +15,17 @@ import GitHub from '../../icons/GitHub.astro'
                                         <a href={url != "" ? url : github} title={`ver proyecto ${name}`} target="_blank">
                                             {name}
                                         </a>
-                                        {active && <span>•</span>}
+                                        {active && <span
+                                        class= {isActiveAndUpdating ? "green" : "parado"}>•</span>}
                                         {github != "" && 
                                             <a href={github} title={`repositorio de github del proyecto ${name}`} target="_blank">
                                                 <GitHub/>
                                             </a>
                                         }
                                     </h4>
-                                    <p>{description}</p>
+                                    {!isActiveAndUpdating && <span></span>}
                                 </header>
+                                <p>{description}</p>
                                 <footer>
                                     <ul>
                                         {
@@ -113,7 +115,15 @@ import GitHub from '../../icons/GitHub.astro'
     h4 span{
         font-size: 1.2em;
         animation: fliker 1.8s ease-in-out infinite;
+    }
+
+    .green{
         color: rgb(31, 148, 31);
+    }
+
+    .parado{
+        color: gray;
+        animation: none;
     }
 
     p{

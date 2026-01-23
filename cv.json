@@ -6,7 +6,7 @@
     "email": "ginociancia10@gmail.com",
     "phone": "(11) 4023-0671",
     "url": "",
-    "summary": "Programo desde hace dos años. Estudio Licenciatura en Sistemas en la UNGS y complemento mi formación de manera autodidacta. Vivo en Buenos Aires y busco seguir creciendo en el desarrollo de software, siempre aprendiendo y mejorando.",
+    "summary": "No solo escribo código; construyo flujos de datos que ahorran tiempo y presupuesto. Desarrollo en Node.js, enfocado en automatización de procesos complejos, integración de sistemas de IA (RAG) y arquitecturas de backend robustas. Mi objetivo es la eficiencia técnica y la integridad de los datos. Ademas, tengo un fuerte conocimiento en frontend.",
     "location": {
       "address": "Av. Hector Arregui 1413",
       "postalCode": "B 1665",
@@ -33,11 +33,19 @@
     ]
   },
   "work": [{
+      "name": "HackDental",
+      "position": "programador Full-Stack",
+      "url": "",
+      "startDate": "2026",
+      "endDate": "Actual",
+      "summary": "Desarrollé un sistema de captación de clientes utilizando TypeScript y Supabase (PostgreSQL). Implementé una arquitectura limpia con separación total de la lógica de negocio en el backend, junto con un manejo robusto de errores, lo que permitió un frontend ligero, rápido y mantenible.",
+      "highlights": [""]
+    },{
       "name": "AuditAi",
       "position": "programador Full-Stack",
       "url": "",
       "startDate": "2025",
-      "endDate": "Actual",
+      "endDate": "2026",
       "summary": "Desarrolle el MVP de un Agente de IA para el analisis de estados contables, extraccion de datos (ingresos, egresos, impuestos, retenciones...) y generación de reportes automáticos. Con un sistema RAG y base de datos vectorial para la generación de informes en lenguaje natural.",
       "highlights": [""]
     },
@@ -46,7 +54,7 @@
       "position": "programador Full-Stack",
       "url": "",
       "startDate": "2025",
-      "endDate": "Actual",
+      "endDate": "2026",
       "summary": "Pagina web de AuditAi. Con sección de Uso (DEMO), Funciones, Contacto y Descripción de servicios.",
       "highlights": [""]
     },
@@ -55,7 +63,7 @@
       "position": "programador Full-Stack",
       "url": "",
       "startDate": "2025",
-      "endDate": "Actual",
+      "endDate": "2025",
       "summary": "Estoy desarrollando una aplicacion full stack para gestión de turnos médicos, pagos y notificaciones. Con Autenticación de usuarios, integración con Mercado Pago, guardado automático en Google Sheets (panel administrativo) y notificación por email",
       "highlights": [""]
     },
@@ -64,17 +72,8 @@
       "position": "programador Full-Stack",
       "url": "",
       "startDate": "2025",
-      "endDate": "Actual",
+      "endDate": "2025",
       "summary": "Estoy desarrollando una Aplicación web para la gestión de gastos compartidos. Con Registro de gastos, login, gestión por categorías y generación de informes.",
-      "highlights": [""]
-    },
-    {
-      "name": "Freelancer",
-      "position": "programador Freelancer",
-      "url": "",
-      "startDate": "2022",
-      "endDate": "Actual",
-      "summary": "Mi desempeño dentro de los diferentes trabajos es presentar soluciones de lógica y código limpio a cada adversidad que se presenta. Principalmente en la parte de fontend.",
       "highlights": [""]
     }
   ],

@@ -33,6 +33,14 @@
     ]
   },
   "work": [{
+      "name": "Leads-Pro",
+      "position": "programador Full-Stack",
+      "url": "https://github.com/GinoGC01/leads-pro-ai",
+      "startDate": "2026",
+      "endDate": "Actual",
+      "summary": "Desarrollé un motor algorítmico de orquestación de ventas B2B, fundamentado en una arquitectura LLM multi-agente de procesamiento secuencial. El sistema ingesta telemetría de prospectos mediante scraping headless (Dos motores de procesamientos de datos y análisis de infraestructura). Sistemas de aprendizaje mediante RAG system.",
+      "highlights": [""]
+    },{
       "name": "HackDental",
       "position": "programador Full-Stack",
       "url": "",
@@ -278,16 +286,27 @@
       "reference": "Reference…"
     }
   ],
-  "projects": [
+  "projects": [{
+        "name": "Leads-Pro",
+        "active": true,
+        "isActiveAndUpdating": true,
+        "position": "Desarrollador Full-Stack",
+        "github": "https://github.com/GinoGC01/leads-pro-ai",
+        "url": "https://github.com/GinoGC01/leads-pro-ai",
+        "startDate": "2026",
+        "endDate": "Actual",
+        "description": "Motor de orquestación B2B basado en una arquitectura Multi-agente, dieñado para la prospección asimétrica y la conversión high-ticket. Pipline ETL algoritmico que transforma vulnerabilidad técnica de un srevicod remoto en un activo comercial líquido.",
+        "highlights": ["Node.js", "RAG System", "Postgres SQL", "Google place API", "OpenAI API", "Vectorial DB", "LangChain", "Pinecone", "IA", "Qdrant", "Redis", "React", "Tailwind"]
+      },
       {
         "name": "AuditAi",
-        "active": true,
+        "active": false,
         "isActiveAndUpdating": true,
         "position": "Desarrollador Full-Stack",
         "github": "",
         "url": "https://t.me/ClariTaxBot",
         "startDate": "2025",
-        "endDate": "Demo publicada",
+        "endDate": "Demo baja",
         "description": "Asistente de contador digital impulsado por IA para análisis de estados contables, extracción de datos y generación de reportes automáticos.",
         "highlights": ["Node.js", "RAG System", "Postgres SQL", "Telegram API", "OpenAI API", "Vectorial DB", "LangChain", "Pinecone", "IA"]
       },

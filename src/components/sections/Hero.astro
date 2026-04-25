@@ -1,5 +1,8 @@
 ---
-import { basics } from "../../../cv.json";
+import defaultCv from "../../../cv.json";
+const cv = Astro.props.cv || defaultCv;
+const lang = Astro.props.lang || "es";
+const { basics } = cv;
 import WorldMap from "../../icons/WorldMap.astro";
 import GitHub from "../../icons/GitHub.astro";
 import LinkedIn from "../../icons/LinkedIn.astro";
@@ -22,12 +25,30 @@ const xInfo = profiles.find(({ network }) => network === "X");
 const xUrl = xInfo?.url;
 ---
 
-<section>
+<section style="position: relative;">
+  <div class="lang-selector">
+    <a
+      href="/"
+      style={`text-decoration: none; padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); font-size: 0.8em; ${lang === "es" ? "background: rgba(0,0,0,0.05); font-weight: bold;" : "color: rgba(0,0,0,0.6)"}`}
+      >ES</a
+    >
+    <a
+      href="/en"
+      style={`text-decoration: none; padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); font-size: 0.8em; ${lang === "en" ? "background: rgba(0,0,0,0.05); font-weight: bold;" : "color: rgba(0,0,0,0.6)"}`}
+      >EN</a
+    >
+  </div>
   <div class="container">
     <div class="info">
       <h1>{name}</h1>
       <h2>{label}</h2>
-      <p>Si puedes imaginarlo, puedes programarlo</p>
+      <p>
+        {
+          lang === "en"
+            ? "If you can imagine it, you can code it"
+            : "Si puedes imaginarlo, puedes programarlo"
+        }
+      </p>
       <span>
         <WorldMap />
         {city}, {region}
@@ -43,7 +64,9 @@ const xUrl = xInfo?.url;
             </a>
           </li>
           <li>
-            <a href="../../descargables/cv.pdf" download="Cv-Gino-Ciancia-2025-Programador-Full-Stack">Descargar CV</a>
+            <a href={basics.cvPdf} download="Cv-Gino-Ciancia"
+              >{lang === "en" ? "Download CV" : "Descargar CV"}</a
+            >
           </li>
         </ul>
       </footer>
@@ -73,7 +96,9 @@ const xUrl = xInfo?.url;
             </a>
           </li>
           <li>
-            <a href="../descargables/cv.pdf" download="Cv-Gino-Ciancia-Programador-Full-Stack">Descargar CV</a>
+            <a href={basics.cvPdf} download="Cv-Gino-Ciancia"
+              >{lang === "en" ? "CV English" : "CV Español"}</a
+            >
           </li>
         </ul>
       </footer>
@@ -96,6 +121,14 @@ const xUrl = xInfo?.url;
 </script>
 
 <style>
+  .lang-selector {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    gap: 8px;
+  }
+
   .container {
     display: flex;
     width: 100%;
@@ -109,7 +142,7 @@ const xUrl = xInfo?.url;
     gap: 0.5em;
   }
 
-  .info > p{
+  .info > p {
     font-style: italic;
     font-weight: normal;
     font-size: small;
@@ -186,6 +219,12 @@ const xUrl = xInfo?.url;
   }
 
   @media (width <= 700px) {
+    .lang-selector {
+      top: -35px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
     .container {
       flex-direction: column-reverse;
       gap: 1.5em;
@@ -202,6 +241,10 @@ const xUrl = xInfo?.url;
 
     span {
       font-size: 0.8em;
+    }
+
+    .info > p {
+      text-align: center;
     }
   }
 

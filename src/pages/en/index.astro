@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/sections/Hero.astro";
+import Education from "../../components/sections/Education.astro";
+import Experience from "../../components/sections/Experience.astro";
+import About from "../../components/sections/About.astro";
+import Skills from "../../components/sections/Skills.astro";
+import Projects from "../../components/sections/Projects.astro";
+import Keyboard from "../../components/Keyboard.astro";
+import Certificados from "../../components/sections/Certificados.astro";
+
+import cvEn from "../../../cv_en.json";
+const { basics } = cvEn;
+const { name, label } = basics;
+---
+
+<Layout title={`Portfolio - ${name}, ${label}`} lang="en">
+  <main>
+    <Hero cv={cvEn} lang="en" />
+    <About cv={cvEn} lang="en" />
+    <Skills cv={cvEn} lang="en" />
+    <Experience cv={cvEn} lang="en" />
+    <Certificados cv={cvEn} lang="en" />
+    <Education cv={cvEn} lang="en" />
+    <Projects cv={cvEn} lang="en" />
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 950px;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 50px 10px;
+    }
+  }
+
+  @media print {
+    main {
+      padding: 0;
+      gap: 4.5em;
+    }
+  }
+</style>

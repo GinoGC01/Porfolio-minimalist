@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "GINO GABRIEL CIANCIA",
-    "label": "Desarrollador Full-Stack & AI",
+    "label": "Full-Stack & AI Developer",
     "image": "../images/perfil.webp",
     "email": "ginociancia10@gmail.com",
     "phone": "+54 11 4023-0671",
     "url": "https://github.com/GinoGC01",
-    "summary": "Desarrollador Full-Stack con fuerte especialización en backend Node.js, integraciones de IA y automatización de procesos. Construyo pipelines LLM multi-agente, sistemas RAG, APIs REST y aplicaciones web completas. Trabajo con tecnologías modernas como Astro, React, Supabase y bases de datos vectoriales. Me destaco en proyectos que combinan producto, negocio y tecnología — desde la arquitectura hasta el deploy.",
+    "summary": "Full-Stack Developer specialized in Node.js backend systems, AI integrations, and process automation. I build multi-agent LLM pipelines, RAG systems, REST APIs, and complete web applications. Comfortable owning projects end-to-end — from architecture to deployment — working across the stack with modern tools like Astro, React, Supabase, and vector databases. Strong track record delivering real products for real clients.",
     "location": {
       "city": "Buenos Aires",
       "region": "Argentina",
@@ -31,52 +31,52 @@
         "url": "https://github.com/GinoGC01"
       }
     ],
-    "cvPdf": "/descargables/cv_es.pdf"
+    "cvPdf": "/descargables/cv_en.pdf"
   },
   "work": [
     {
-      "name": "Leads-Pro — Motor de Orquestación B2B",
+      "name": "Leads-Pro — B2B Orchestration Engine",
       "position": "AI & Backend Developer",
       "url": "https://github.com/GinoGC01/leads-pro-ai",
       "startDate": "2026",
-      "endDate": "Presente",
-      "summary": "Pipeline LLM multi-agente para prospección automatizada y calificación técnica de leads. Web scraping headless, base de datos vectorial Qdrant y bucles RLHF. Integración con OpenAI API, generación estricta de JSON y automatización via webhooks. Pipelines de datos con OCR y modelos de visión artificial.",
+      "endDate": "Present",
+      "summary": "Built a multi-agent LLM pipeline for automated lead prospecting and technical qualification. Headless web scraping, Qdrant vector database, and RLHF feedback loops. OpenAI API integration with strict JSON output and webhook-based workflow automation. Data processing pipelines combining OCR and computer vision models.",
       "highlights": []
     },
     {
-      "name": "HackDental — Plataforma de Captación de Pacientes",
+      "name": "HackDental — Patient Acquisition Platform",
       "position": "Full-Stack Developer",
       "url": "",
       "startDate": "2026",
-      "endDate": "Presente",
-      "summary": "Arquitectura de servidor con Node.js y TypeScript sobre Supabase. Integración de servicios externos, sincronización de datos y automatización de flujos. Desarrollo completo del frontend y lógica de negocio (React + Tailwind CSS). Plataforma web de captación de clientes + sitio web institucional completo.",
+      "endDate": "Present",
+      "summary": "Server architecture with Node.js and TypeScript on top of Supabase. Third-party service integrations, data sync, and automated workflow implementation. Full frontend development and business logic (React + Tailwind CSS). Complete web platform covering patient acquisition and institutional presence.",
       "highlights": []
     },
     {
-      "name": "Liga Amateur — App de Gestión de Ligas de Fútbol",
+      "name": "Amateur League — Soccer League Management App",
       "position": "Full-Stack Developer",
       "url": "",
       "startDate": "2026",
-      "endDate": "Presente",
-      "summary": "Aplicación fullstack para gestión de torneos, fixtures, equipos y estadísticas de ligas amateurs. Backend Node.js/TypeScript, base de datos relacional, frontend React. UX mobile-first para dirigentes y jugadores.",
+      "endDate": "Present",
+      "summary": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",
       "highlights": []
     },
     {
-      "name": "La Promesa Deportes — Sitio Web Corporativo",
+      "name": "La Promesa Deportes — Corporate Website",
       "position": "Freelance Full-Stack Developer",
       "url": "https://la-promesa.vercel.app",
       "startDate": "2026",
       "endDate": "2026",
-      "summary": "Sitio web institucional para empresa manufacturera de indumentaria deportiva. Stack: Astro + Tailwind CSS. Catálogo dinámico de productos via Google Sheets API. En producción: la-promesa.vercel.app",
+      "summary": "Institutional website for a sportswear manufacturing company. Stack: Astro + Tailwind CSS. Dynamic product catalog via Google Sheets API. Live: la-promesa.vercel.app",
       "highlights": []
     },
     {
-      "name": "AuditBot / AuditAI — Análisis de Resúmenes Bancarios",
+      "name": "AuditBot / AuditAI — Automated Bank Statement Analysis",
       "position": "Backend Developer",
       "url": "",
       "startDate": "2025",
       "endDate": "2026",
-      "summary": "Sistema backend para análisis automatizado de resúmenes bancarios con IA. Pipelines de extracción, normalización y validación de datos financieros. Sistema RAG con base vectorial + integración con APIs de IA y Telegram. Arquitectura de microservicios.",
+      "summary": "Backend system for automated analysis of bank statements using AI. Pipelines for financial data extraction, normalization, and validation. RAG system with vector database + integrations with AI APIs and Telegram. Microservices architecture.",
       "highlights": []
     }
   ],
@@ -95,23 +95,23 @@
   ],
   "education": [
     {
-      "institution": "Universidad Nacional General Sarmiento (UNGS)",
+      "institution": "UNGS, Buenos Aires",
       "image": "../images/logo-universidad.webp",
       "url": "https://www.ungs.edu.ar/",
-      "area": "Licenciatura en Sistemas",
-      "studyType": "Carrera de grado",
+      "area": "B.Sc. in Information Systems",
+      "studyType": "Undergraduate",
       "startDate": "2023",
-      "endDate": "en curso",
+      "endDate": "in progress",
       "score": "",
       "courses": []
     }
   ],
   "awards": [
     {
-      "title": "4.° puesto — Torneo de Programación UNGS",
+      "title": "4th place — UNGS Programming Tournament",
       "date": "2025",
       "awarder": "UNGS",
-      "summary": "Experiencia en el mercado freelance argentino: presupuestos, negociación y entrega de proyectos end-to-end."
+      "summary": "Freelance experience in the Argentine tech market: scoping, budgeting, and end-to-end project delivery."
     }
   ],
   "certificates": [
@@ -153,7 +153,7 @@
       "name": "REST APIs"
     },
     {
-      "name": "Microservicios"
+      "name": "Microservices"
     },
     {
       "name": "React"
@@ -186,7 +186,7 @@
       "name": "OCR"
     },
     {
-      "name": "Visión artificial"
+      "name": "Computer Vision"
     },
     {
       "name": "Git"
@@ -221,12 +221,12 @@
   ],
   "languages": [
     {
-      "language": "Español",
-      "fluency": "Nativo"
+      "language": "Spanish",
+      "fluency": "Native"
     },
     {
-      "language": "Inglés",
-      "fluency": "Básico (A2) — mejorando activamente"
+      "language": "English",
+      "fluency": "Basic (A2) — actively improving"
     }
   ],
   "interests": [
@@ -253,8 +253,8 @@
       "github": "https://github.com/GinoGC01/leads-pro-ai",
       "url": "https://github.com/GinoGC01/leads-pro-ai",
       "startDate": "2026",
-      "endDate": "Presente",
-      "description": "Pipeline LLM multi-agente para prospección automatizada y calificación técnica de leads. Web scraping headless, base de datos vectorial Qdrant y bucles RLHF. Integración con OpenAI API, generación estricta de JSON y automatización via webhooks. Pipelines de datos con OCR y modelos de visión artificial.",
+      "endDate": "Present",
+      "description": "Built a multi-agent LLM pipeline for automated lead prospecting and technical qualification. Headless web scraping, Qdrant vector database, and RLHF feedback loops. OpenAI API integration with strict JSON output and webhook-based workflow automation. Data processing pipelines combining OCR and computer vision models.",
       "highlights": [
         "Node.js",
         "Qdrant",
@@ -270,8 +270,8 @@
       "github": "",
       "url": "",
       "startDate": "2026",
-      "endDate": "Presente",
-      "description": "Arquitectura de servidor con Node.js y TypeScript sobre Supabase. Integración de servicios externos, sincronización de datos y automatización de flujos. Desarrollo completo del frontend y lógica de negocio (React + Tailwind CSS). Plataforma web de captación de clientes + sitio web institucional completo.",
+      "endDate": "Present",
+      "description": "Server architecture with Node.js and TypeScript on top of Supabase. Third-party service integrations, data sync, and automated workflow implementation. Full frontend development and business logic (React + Tailwind CSS). Complete web platform covering patient acquisition and institutional presence.",
       "highlights": [
         "React",
         "Supabase",
@@ -279,15 +279,15 @@
       ]
     },
     {
-      "name": "Liga Amateur",
+      "name": "Amateur League",
       "active": true,
       "isActiveAndUpdating": true,
       "position": "Full-Stack Developer",
       "github": "",
       "url": "",
       "startDate": "2026",
-      "endDate": "Presente",
-      "description": "Aplicación fullstack para gestión de torneos, fixtures, equipos y estadísticas de ligas amateurs. Backend Node.js/TypeScript, base de datos relacional, frontend React. UX mobile-first para dirigentes y jugadores.",
+      "endDate": "Present",
+      "description": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",
       "highlights": [
         "React",
         "Node.js",
@@ -303,7 +303,7 @@
       "url": "https://la-promesa.vercel.app",
       "startDate": "2026",
       "endDate": "2026",
-      "description": "Sitio web institucional para empresa manufacturera de indumentaria deportiva. Stack: Astro + Tailwind CSS. Catálogo dinámico de productos via Google Sheets API. En producción: la-promesa.vercel.app",
+      "description": "Institutional website for a sportswear manufacturing company. Stack: Astro + Tailwind CSS. Dynamic product catalog via Google Sheets API. Live: la-promesa.vercel.app",
       "highlights": [
         "Astro",
         "Tailwind CSS",
@@ -319,7 +319,7 @@
       "url": "",
       "startDate": "2025",
       "endDate": "2026",
-      "description": "Sistema backend para análisis automatizado de resúmenes bancarios con IA. Pipelines de extracción, normalización y validación de datos financieros. Sistema RAG con base vectorial + integración con APIs de IA y Telegram. Arquitectura de microservicios.",
+      "description": "Backend system for automated analysis of bank statements using AI. Pipelines for financial data extraction, normalization, and validation. RAG system with vector database + integrations with AI APIs and Telegram. Microservices architecture.",
       "highlights": [
         "Node.js",
         "RAG",

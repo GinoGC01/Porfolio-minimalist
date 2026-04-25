@@ -1,9 +1,22 @@
 ---
-import { certificates } from "../../../cv.json";
+import defaultCv from "../../../cv.json";
+const cv = Astro.props.cv || defaultCv;
+const lang = Astro.props.lang || "es";
+const { certificates } = cv;
 ---
 
 <section>
-  <h3>{certificates.length > 1 ? "Certificados" : "Certificado"}</h3>
+  <h3>
+    {
+      lang === "en"
+        ? certificates.length > 1
+          ? "Certificates"
+          : "Certificate"
+        : certificates.length > 1
+          ? "Certificados"
+          : "Certificado"
+    }
+  </h3>
   <ul>
     {
       certificates?.map((certificate) => {
@@ -44,7 +57,7 @@ import { certificates } from "../../../cv.json";
     width: 100%;
     border-radius: 5px;
     overflow: hidden;
-    transition: scale .2s ;
+    transition: scale 0.2s;
   }
 
   li,
@@ -115,14 +128,13 @@ import { certificates } from "../../../cv.json";
   @media (width < 700px) {
     li {
       height: 250px;
-
     }
 
     li:hover {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    scale: 1.02;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      scale: 1.02;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
   }
 
   @media print {

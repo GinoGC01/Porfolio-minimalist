@@ -9,19 +9,20 @@ import Projects from "../components/sections/Projects.astro";
 import Keyboard from "../components/Keyboard.astro";
 import Certificados from "../components/sections/Certificados.astro";
 
-import { basics } from "../../cv.json";
+import defaultCv from "../../cv.json";
+const { basics } = defaultCv;
 const { name, label } = basics;
 ---
 
-<Layout title=`Portafolio - ${name}, ${label}`>
+<Layout title={`Portafolio - ${name}, ${label}`}>
   <main>
-    <Hero />
-    <About />
-    <Skills />
-    <Experience />
-    <Certificados />
-    <Education />
-    <Projects />
+    <Hero cv={defaultCv} lang="es" />
+    <About cv={defaultCv} lang="es" />
+    <Skills cv={defaultCv} lang="es" />
+    <Experience cv={defaultCv} lang="es" />
+    <Certificados cv={defaultCv} lang="es" />
+    <Education cv={defaultCv} lang="es" />
+    <Projects cv={defaultCv} lang="es" />
   </main>
 </Layout>
 

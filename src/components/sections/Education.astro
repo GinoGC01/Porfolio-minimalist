@@ -1,8 +1,11 @@
 ---
-import {education} from '../../../cv.json'
+import defaultCv from '../../../cv.json';
+const cv = Astro.props.cv || defaultCv;
+const lang = Astro.props.lang || 'es';
+const {education} = cv;
 ---
 <section>
-    <h3>Educación</h3>
+    <h3>{lang === 'en' ? 'Education' : 'Educación'}</h3>
     <ul>
         {
             education.map(({institution, url, area, studyType, startDate, endDate, image}) => {
@@ -80,6 +83,12 @@ import {education} from '../../../cv.json'
     }
 
     @media (width <= 700px){
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5em;
+        }
+
         h4, h5{
             font-size: .7em;
         }

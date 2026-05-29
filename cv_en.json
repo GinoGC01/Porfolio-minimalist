@@ -53,9 +53,9 @@
       "highlights": []
     },
     {
-      "name": "Amateur League — Soccer League Management App",
+      "name": "CanchaLibre — Soccer League Management App",
       "position": "Full-Stack Developer",
-      "url": "",
+      "url": "www.canchalibre.pro",
       "startDate": "2026",
       "endDate": "Present",
       "summary": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",
@@ -279,12 +279,12 @@
       ]
     },
     {
-      "name": "Amateur League",
+      "name": "CanchaLibre",
       "active": true,
       "isActiveAndUpdating": true,
       "position": "Full-Stack Developer",
       "github": "",
-      "url": "",
+      "url": "www.canchalibre.pro",
       "startDate": "2026",
       "endDate": "Present",
       "description": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",

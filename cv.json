@@ -53,9 +53,9 @@
       "highlights": []
     },
     {
-      "name": "Liga Amateur — App de Gestión de Ligas de Fútbol",
+      "name": "CanchaLibre — App de Gestión de Ligas de Fútbol",
       "position": "Full-Stack Developer",
-      "url": "",
+      "url": "www.canchalibre.pro",
       "startDate": "2026",
       "endDate": "Presente",
       "summary": "Aplicación fullstack para gestión de torneos, fixtures, equipos y estadísticas de ligas amateurs. Backend Node.js/TypeScript, base de datos relacional, frontend React. UX mobile-first para dirigentes y jugadores.",
@@ -279,12 +279,12 @@
       ]
     },
     {
-      "name": "Liga Amateur",
+      "name": "CanchaLibre",
       "active": true,
       "isActiveAndUpdating": true,
       "position": "Full-Stack Developer",
       "github": "",
-      "url": "",
+      "url": "www.canchalibre.pro",
       "startDate": "2026",
       "endDate": "Presente",
       "description": "Aplicación fullstack para gestión de torneos, fixtures, equipos y estadísticas de ligas amateurs. Backend Node.js/TypeScript, base de datos relacional, frontend React. UX mobile-first para dirigentes y jugadores.",

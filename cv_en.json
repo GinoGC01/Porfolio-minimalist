@@ -34,6 +34,15 @@
     "cvPdf": "/descargables/cv_en.pdf"
   },
   "work": [
+        {
+      "name": "CanchaLibre — Soccer League Management App",
+      "position": "Full-Stack Developer",
+      "url": "https://www.canchalibre.pro",
+      "startDate": "2026",
+      "endDate": "Present",
+      "summary": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",
+      "highlights": []
+    },
     {
       "name": "Leads-Pro — B2B Orchestration Engine",
       "position": "AI & Backend Developer",
@@ -52,15 +61,7 @@
       "summary": "Server architecture with Node.js and TypeScript on top of Supabase. Third-party service integrations, data sync, and automated workflow implementation. Full frontend development and business logic (React + Tailwind CSS). Complete web platform covering patient acquisition and institutional presence.",
       "highlights": []
     },
-    {
-      "name": "CanchaLibre — Soccer League Management App",
-      "position": "Full-Stack Developer",
-      "url": "www.canchalibre.pro",
-      "startDate": "2026",
-      "endDate": "Present",
-      "summary": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",
-      "highlights": []
-    },
+
     {
       "name": "La Promesa Deportes — Corporate Website",
       "position": "Freelance Full-Stack Developer",
@@ -246,6 +247,22 @@
   ],
   "projects": [
     {
+      "name": "CanchaLibre",
+      "active": true,
+      "isActiveAndUpdating": true,
+      "position": "Full-Stack Developer",
+      "github": "",
+      "url": "https://www.canchalibre.pro",
+      "startDate": "2026",
+      "endDate": "Present",
+      "description": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",
+      "highlights": [
+        "React",
+        "Node.js",
+        "TypeScript"
+      ]
+    },
+    {
       "name": "Leads-Pro",
       "active": true,
       "isActiveAndUpdating": true,
@@ -276,22 +293,6 @@
         "React",
         "Supabase",
         "Node.js"
-      ]
-    },
-    {
-      "name": "CanchaLibre",
-      "active": true,
-      "isActiveAndUpdating": true,
-      "position": "Full-Stack Developer",
-      "github": "",
-      "url": "www.canchalibre.pro",
-      "startDate": "2026",
-      "endDate": "Present",
-      "description": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",
-      "highlights": [
-        "React",
-        "Node.js",
-        "TypeScript"
       ]
     },
     {

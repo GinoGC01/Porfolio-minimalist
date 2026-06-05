@@ -34,6 +34,15 @@
     "cvPdf": "/descargables/cv_es.pdf"
   },
   "work": [
+        {
+      "name": "CanchaLibre — App de Gestión de Ligas de Fútbol",
+      "position": "Full-Stack Developer",
+      "url": "https://www.canchalibre.pro",
+      "startDate": "2026",
+      "endDate": "Presente",
+      "summary": "Aplicación fullstack para gestión de torneos, fixtures, equipos y estadísticas de ligas amateurs. Backend Node.js/TypeScript, base de datos relacional, frontend React. UX mobile-first para dirigentes y jugadores.",
+      "highlights": []
+    },
     {
       "name": "Leads-Pro — Motor de Orquestación B2B",
       "position": "AI & Backend Developer",
@@ -50,15 +59,6 @@
       "startDate": "2026",
       "endDate": "Presente",
       "summary": "Arquitectura de servidor con Node.js y TypeScript sobre Supabase. Integración de servicios externos, sincronización de datos y automatización de flujos. Desarrollo completo del frontend y lógica de negocio (React + Tailwind CSS). Plataforma web de captación de clientes + sitio web institucional completo.",
-      "highlights": []
-    },
-    {
-      "name": "CanchaLibre — App de Gestión de Ligas de Fútbol",
-      "position": "Full-Stack Developer",
-      "url": "www.canchalibre.pro",
-      "startDate": "2026",
-      "endDate": "Presente",
-      "summary": "Aplicación fullstack para gestión de torneos, fixtures, equipos y estadísticas de ligas amateurs. Backend Node.js/TypeScript, base de datos relacional, frontend React. UX mobile-first para dirigentes y jugadores.",
       "highlights": []
     },
     {
@@ -246,6 +246,22 @@
   ],
   "projects": [
     {
+      "name": "CanchaLibre",
+      "active": true,
+      "isActiveAndUpdating": true,
+      "position": "Full-Stack Developer",
+      "github": "",
+      "url": "https://www.canchalibre.pro",
+      "startDate": "2026",
+      "endDate": "Presente",
+      "description": "Aplicación fullstack para gestión de torneos, fixtures, equipos y estadísticas de ligas amateurs. Backend Node.js/TypeScript, base de datos relacional, frontend React. UX mobile-first para dirigentes y jugadores.",
+      "highlights": [
+        "React",
+        "Node.js",
+        "TypeScript"
+      ]
+    },
+    {
       "name": "Leads-Pro",
       "active": true,
       "isActiveAndUpdating": true,
@@ -276,22 +292,6 @@
         "React",
         "Supabase",
         "Node.js"
-      ]
-    },
-    {
-      "name": "CanchaLibre",
-      "active": true,
-      "isActiveAndUpdating": true,
-      "position": "Full-Stack Developer",
-      "github": "",
-      "url": "www.canchalibre.pro",
-      "startDate": "2026",
-      "endDate": "Presente",
-      "description": "Aplicación fullstack para gestión de torneos, fixtures, equipos y estadísticas de ligas amateurs. Backend Node.js/TypeScript, base de datos relacional, frontend React. UX mobile-first para dirigentes y jugadores.",
-      "highlights": [
-        "React",
-        "Node.js",
-        "TypeScript"
       ]
     },
     {

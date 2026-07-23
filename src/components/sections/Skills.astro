@@ -1,8 +1,5 @@
 ---
 import defaultCv from "../../../cv.json";
-const cv = Astro.props.cv || defaultCv;
-const lang = Astro.props.lang || "es";
-const { skills } = cv;
 import GitHub from "../../icons/GitHub.astro";
 import React from "../../icons/react.astro";
 import HTML from "../../icons/html.astro";
@@ -28,14 +25,41 @@ import Webhooks from "../../icons/Webhooks.astro";
 import Rag from "../../icons/Rag.astro";
 import OCR from "../../icons/OCR.astro";
 import OpenAI from "../../icons/OpenAi.astro";
+import Vercel from '../../icons/Vercel.astro'
+import Render from "../../icons/Render.astro";
+import Playwright from "../../icons/Playwritht.astro";
+import Prisma from "../../icons/Prisma.astro";
+import Vitest from "../../icons/Vitest.astro";
+import JWT from "../../icons/JWT.astro";
+import Zod from "../../icons/Zod.astro";
+import Redis from "../../icons/Redis.astro";
+import K6 from "../../icons/K6.astro";
+import PostgreSQL from "../../icons/PostgreSQL.astro"
 
-const SKILLS_ICONS = {
+type IconComponent = typeof HTML;
+
+interface Skill {
+  name: string;
+  level?: string;
+}
+
+interface Props {
+  cv?: { skills: Skill[]; learning?: Skill[] };
+  lang?: string;
+}
+
+const cv = Astro.props.cv || defaultCv;
+const lang = Astro.props.lang || "es";
+const { skills, learning } = cv;
+
+const SKILLS_ICONS: Record<string, IconComponent> = {
   HTML,
   CSS,
   Javascript,
   TypeScript,
   React,
   Node,
+  "Node.js": Node,
   SQL,
   MySQL,
   Git,
@@ -44,6 +68,7 @@ const SKILLS_ICONS = {
   MongoDB,
   Express,
   Tailwind,
+  "Tailwind CSS": Tailwind,
   N8n,
   Supabase,
   Docker: DockerIcon,
@@ -55,6 +80,22 @@ const SKILLS_ICONS = {
   RAG: Rag,
   OCR,
   "OpenAI API": OpenAI,
+  JWT,
+  Zod,
+  Vercel,
+  Render,
+  Prisma,
+  Vitest,
+  Playwright,
+  Redis,
+  "k6":K6,
+  PostgreSQL
+};
+
+const renderSkillItem = (name: string, level?: string) => {
+  const iconName: string = name === "JavaScript" ? "Javascript" : name;
+  const Icon: IconComponent | undefined = SKILLS_ICONS[iconName];
+  return { Icon, name, level };
 };
 ---
 
@@ -62,25 +103,68 @@ const SKILLS_ICONS = {
   <h3>{lang === "en" ? "Skills" : "Habilidades"}</h3>
   <ul>
     {
-      skills.map(({ name, level }) => {
-        const iconName = name === "JavaScript" ? "Javascript" : name;
-        const Icon = SKILLS_ICONS[iconName];
+      skills.map((skill: Skill) => {
+        const { Icon, name } = renderSkillItem(skill.name, skill.level);
         return (
           <li>
-            {/* <span class="level">{level}</span> */}
             {Icon && <Icon />} <span>{name}</span>
           </li>
         );
       })
     }
   </ul>
+  {learning && learning.length > 0 && (
+    <div class="learning">
+      <h4>{lang === "en" ? "Learning" : "Aprendiendo"}</h4>
+      <ul>
+        {
+          learning.map((skill: Skill) => {
+            const { Icon, name } = renderSkillItem(skill.name, skill.level);
+            return (
+              <li>
+                {Icon && <Icon />} <span>{name}</span>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  )}
 </section>
 
 <style>
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
   ul {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 1em;
+  }
+
+  .learning {
+    margin-top: 0.5em;
+  }
+
+  h4 {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.55);
+    margin-bottom: 0.4em;
+  }
+
+  .learning li {
+    font-size: 0.95em;
+    background-color: transparent;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    opacity: 0.75;
+  }
+
+  .learning li:hover {
+    opacity: 0.55;
   }
 
   li {

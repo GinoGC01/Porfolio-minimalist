@@ -1,10 +1,26 @@
 ---
 import defaultCv from "../../../cv.json";
+
+interface WorkItem {
+  name: string;
+  position: string;
+  url: string;
+  startDate: string;
+  endDate: string;
+  summary: string;
+  highlights: string[];
+}
+
+interface Props {
+  cv?: { work: WorkItem[] };
+  lang?: string;
+}
+
 const cv = Astro.props.cv || defaultCv;
 const lang = Astro.props.lang || "es";
 const { work } = cv;
-const principales = work.slice(0, 3);
-const secundarios = work.slice(3);
+const principales: WorkItem[] = work.slice(0, 3);
+const secundarios: WorkItem[] = work.slice(3);
 ---
 
 <section>
@@ -163,12 +179,11 @@ const secundarios = work.slice(3);
     display: block;
     font-size: 1.2em;
     font-weight: 600;
-    transition: transform ease 0.1s;
+    transition: color ease 0.1s;
   }
 
   a:hover {
     color: rgba(0, 0, 0, 0.75);
-    transform: scale(1.05);
   }
 
   h5 {

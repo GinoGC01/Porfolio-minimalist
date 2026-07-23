@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "GINO GABRIEL CIANCIA",
-    "label": "Full-Stack & AI Developer",
+    "label": "Web Developer · Frontend Developer · Backend Developer",
     "image": "../images/perfil.webp",
     "email": "ginociancia10@gmail.com",
     "phone": "+54 11 4023-0671",
     "url": "https://github.com/GinoGC01",
-    "summary": "Full-Stack Developer specialized in Node.js backend systems, AI integrations, and process automation. I build multi-agent LLM pipelines, RAG systems, REST APIs, and complete web applications. Comfortable owning projects end-to-end — from architecture to deployment — working across the stack with modern tools like Astro, React, Supabase, and vector databases. Strong track record delivering real products for real clients.",
+    "summary": "Full-Stack developer and Systems student specialized in building SaaS platforms end-to-end. Focused on scalable architecture, complex business logic, security, and generative AI integrations.",
     "location": {
       "city": "Buenos Aires",
       "region": "Argentina",
@@ -34,13 +34,31 @@
     "cvPdf": "/descargables/cv_en.pdf"
   },
   "work": [
-        {
+    {
+      "name": "ACOMVITA — Multi-tenant Medical Platform",
+      "position": "Full-Stack Developer",
+      "url": "",
+      "startDate": "2026",
+      "endDate": "Present",
+      "summary": "Multi-tenant medical platform (PSP) with RBAC and strict data isolation. Clinical conversational agent (RAG) and multi-channel state machine (Telegram/Web) with persistent sessions and concurrency control. Enterprise BackOffice (22 CRUD modules) and +140 automated test suite (unit/integration).",
+      "highlights": []
+    },
+    {
+      "name": "Kredio — B2B Financial SaaS",
+      "position": "Full-Stack Developer",
+      "url": "https://kredio.pro",
+      "startDate": "2026",
+      "endDate": "Present",
+      "summary": "B2B SaaS platform for credit management, arrears, and multi-currency subscriptions (ARS/USD). Dashboard load optimization through SQL query refactoring and in-memory caching. E2E and stress testing pre-production.",
+      "highlights": []
+    },
+    {
       "name": "CanchaLibre — Soccer League Management App",
       "position": "Full-Stack Developer",
       "url": "https://www.canchalibre.pro",
       "startDate": "2026",
       "endDate": "Present",
-      "summary": "Full-stack app to manage amateur soccer tournaments: fixtures, teams, standings, and stats. Node.js/TypeScript backend, relational database, React frontend. Mobile-first UX designed for league organizers and players.",
+      "summary": "Sports SaaS with a logic engine for fixture generation, position calculation with tiebreaker criteria, and a real-time Match Center. 3-layer backend, feature-based frontend, and database-level security policies. Operational monitoring system, cron jobs, and serverless functions.",
       "highlights": []
     },
     {
@@ -61,7 +79,6 @@
       "summary": "Server architecture with Node.js and TypeScript on top of Supabase. Third-party service integrations, data sync, and automated workflow implementation. Full frontend development and business logic (React + Tailwind CSS). Complete web platform covering patient acquisition and institutional presence.",
       "highlights": []
     },
-
     {
       "name": "La Promesa Deportes — Corporate Website",
       "position": "Freelance Full-Stack Developer",
@@ -112,7 +129,7 @@
       "title": "4th place — UNGS Programming Tournament",
       "date": "2025",
       "awarder": "UNGS",
-      "summary": "Freelance experience in the Argentine tech market: scoping, budgeting, and end-to-end project delivery."
+      "summary": ""
     }
   ],
   "certificates": [
@@ -142,28 +159,49 @@
   ],
   "skills": [
     {
-      "name": "Node"
-    },
-    {
-      "name": "Express"
+      "name": "React"
     },
     {
       "name": "TypeScript"
     },
     {
-      "name": "REST APIs"
-    },
-    {
-      "name": "Microservices"
-    },
-    {
-      "name": "React"
+      "name": "JavaScript"
     },
     {
       "name": "Astro"
     },
     {
-      "name": "Tailwind"
+      "name": "Tailwind CSS"
+    },
+    {
+      "name": "React Query"
+    },
+    {
+      "name": "Zod"
+    },
+    {
+      "name": "Node.js"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "REST APIs"
+    },
+    {
+      "name": "JWT"
+    },
+    {
+      "name": "OAuth"
+    },
+    {
+      "name": "RBAC"
+    },
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "SQL"
     },
     {
       "name": "MongoDB"
@@ -172,22 +210,25 @@
       "name": "MySQL"
     },
     {
-      "name": "Supabase"
-    },
-    {
-      "name": "Qdrant"
-    },
-    {
-      "name": "OpenAI API"
+      "name": "pgvector"
     },
     {
       "name": "RAG"
     },
     {
-      "name": "OCR"
+      "name": "LLM"
     },
     {
-      "name": "Computer Vision"
+      "name": "embeddings"
+    },
+    {
+      "name": "conversational agents"
+    },
+    {
+      "name": "OpenAI API"
+    },
+    {
+      "name": "OCR"
     },
     {
       "name": "Git"
@@ -202,22 +243,10 @@
       "name": "Postman"
     },
     {
-      "name": "N8n"
+      "name": "Vercel"
     },
     {
-      "name": "Mercado Pago SDK"
-    },
-    {
-      "name": "Google Sheets API"
-    },
-    {
-      "name": "Telegram API"
-    },
-    {
-      "name": "Webhooks"
-    },
-    {
-      "name": "JavaScript"
+      "name": "Render"
     }
   ],
   "languages": [
@@ -246,6 +275,23 @@
     }
   ],
   "projects": [
+    {
+      "name": "Kredio",
+      "active": true,
+      "isActiveAndUpdating": true,
+      "position": "Full-Stack Developer",
+      "github": "",
+      "url": "https://kredio.pro",
+      "startDate": "2026",
+      "endDate": "Present",
+      "description": "B2B SaaS platform for credit management, arrears, and multi-currency subscriptions (ARS/USD). Dashboard load optimization through SQL query refactoring and in-memory caching. E2E and stress testing pre-production.",
+      "highlights": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "TypeScript"
+      ]
+    },
     {
       "name": "CanchaLibre",
       "active": true,
@@ -281,7 +327,7 @@
     },
     {
       "name": "HackDental",
-      "active": true,
+      "active": false,
       "isActiveAndUpdating": true,
       "position": "Full-Stack Developer",
       "github": "",
@@ -327,6 +373,23 @@
         "Vector DB",
         "Telegram API"
       ]
+    }
+  ],
+  "learning": [
+    {
+      "name": "k6"
+    },
+    {
+      "name": "Playwright"
+    },
+    {
+      "name": "Redis"
+    },
+    {
+      "name": "Prisma"
+    },
+    {
+      "name": "Vitest"
     }
   ]
 }

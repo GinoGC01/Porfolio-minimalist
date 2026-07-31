@@ -158,41 +158,107 @@
     }
   ],
   "skills": [
-    { "name": "React" },
-    { "name": "TypeScript" },
-    { "name": "JavaScript" },
-    { "name": "Astro" },
-    { "name": "Tailwind CSS" },
-    { "name": "Zod" },
-    { "name": "Node.js" },
-    { "name": "Express" },
-    { "name": "APIs REST" },
-    { "name": "JWT" },
-    { "name": "OAuth" },
-    { "name": "RBAC" },
-    { "name": "PostgreSQL" },
-    { "name": "SQL" },
-    { "name": "MongoDB" },
-    { "name": "MySQL" },
-    { "name": "pgvector" },
-    { "name": "RAG" },
-    { "name": "LLM" },
-    { "name": "embeddings" },
-    { "name": "OpenAI API" },
-    { "name": "OCR" },
-    { "name": "Git" },
-    { "name": "GitHub" },
-    { "name": "Docker" },
-    { "name": "Postman" },
-    { "name": "Vercel" },
-    { "name": "Render" }
+    {
+      "name": "React"
+    },
+    {
+      "name": "TypeScript"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "Astro"
+    },
+    {
+      "name": "Tailwind CSS"
+    },
+    {
+      "name": "Zod"
+    },
+    {
+      "name": "Node.js"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "APIs REST"
+    },
+    {
+      "name": "JWT"
+    },
+    {
+      "name": "OAuth"
+    },
+    {
+      "name": "RBAC"
+    },
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "SQL"
+    },
+    {
+      "name": "MongoDB"
+    },
+    {
+      "name": "MySQL"
+    },
+    {
+      "name": "pgvector"
+    },
+    {
+      "name": "RAG"
+    },
+    {
+      "name": "LLM"
+    },
+    {
+      "name": "embeddings"
+    },
+    {
+      "name": "OpenAI API"
+    },
+    {
+      "name": "OCR"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "GitHub"
+    },
+    {
+      "name": "Docker"
+    },
+    {
+      "name": "Postman"
+    },
+    {
+      "name": "Vercel"
+    },
+    {
+      "name": "Render"
+    },
+    {
+      "name": "Prisma"
+    }
   ],
   "learning": [
-    { "name": "k6" },
-    { "name": "Playwright" },
-    { "name": "Redis" },
-    { "name": "Prisma" },
-    { "name": "Vitest" }
+    {
+      "name": "k6"
+    },
+    {
+      "name": "Playwright"
+    },
+    {
+      "name": "Redis"
+    },
+    {
+      "name": "Vitest"
+    }
   ],
   "languages": [
     {

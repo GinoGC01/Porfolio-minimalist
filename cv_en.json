@@ -65,8 +65,8 @@
       "name": "Leads-Pro — B2B Orchestration Engine",
       "position": "AI & Backend Developer",
       "url": "https://github.com/GinoGC01/leads-pro-ai",
-      "startDate": "2026",
-      "endDate": "Present",
+      "startDate": "2025",
+      "endDate": "2026",
       "summary": "Built a multi-agent LLM pipeline for automated lead prospecting and technical qualification. Headless web scraping, Qdrant vector database, and RLHF feedback loops. OpenAI API integration with strict JSON output and webhook-based workflow automation. Data processing pipelines combining OCR and computer vision models.",
       "highlights": []
     },
@@ -74,8 +74,8 @@
       "name": "HackDental — Patient Acquisition Platform",
       "position": "Full-Stack Developer",
       "url": "",
-      "startDate": "2026",
-      "endDate": "Present",
+      "startDate": "2025",
+      "endDate": "2026",
       "summary": "Server architecture with Node.js and TypeScript on top of Supabase. Third-party service integrations, data sync, and automated workflow implementation. Full frontend development and business logic (React + Tailwind CSS). Complete web platform covering patient acquisition and institutional presence.",
       "highlights": []
     },
@@ -83,7 +83,7 @@
       "name": "La Promesa Deportes — Corporate Website",
       "position": "Freelance Full-Stack Developer",
       "url": "https://la-promesa.vercel.app",
-      "startDate": "2026",
+      "startDate": "2025",
       "endDate": "2026",
       "summary": "Institutional website for a sportswear manufacturing company. Stack: Astro + Tailwind CSS. Dynamic product catalog via Google Sheets API. Live: la-promesa.vercel.app",
       "highlights": []
@@ -92,8 +92,8 @@
       "name": "AuditBot / AuditAI — Automated Bank Statement Analysis",
       "position": "Backend Developer",
       "url": "",
-      "startDate": "2025",
-      "endDate": "2026",
+      "startDate": "2024",
+      "endDate": "2025",
       "summary": "Backend system for automated analysis of bank statements using AI. Pipelines for financial data extraction, normalization, and validation. RAG system with vector database + integrations with AI APIs and Telegram. Microservices architecture.",
       "highlights": []
     }

@@ -65,8 +65,8 @@
       "name": "Leads-Pro — Motor de Orquestación B2B",
       "position": "AI & Backend Developer",
       "url": "https://github.com/GinoGC01/leads-pro-ai",
-      "startDate": "2026",
-      "endDate": "Presente",
+      "startDate": "2025",
+      "endDate": "2026",
       "summary": "Pipeline LLM multi-agente para prospección automatizada y calificación técnica de leads. Web scraping headless, base de datos vectorial Qdrant y bucles RLHF. Integración con OpenAI API, generación estricta de JSON y automatización via webhooks. Pipelines de datos con OCR y modelos de visión artificial.",
       "highlights": []
     },
@@ -74,8 +74,8 @@
       "name": "HackDental — Plataforma de Captación de Pacientes",
       "position": "Full-Stack Developer",
       "url": "",
-      "startDate": "2026",
-      "endDate": "Presente",
+      "startDate": "2025",
+      "endDate": "2026",
       "summary": "Arquitectura de servidor con Node.js y TypeScript sobre Supabase. Integración de servicios externos, sincronización de datos y automatización de flujos. Desarrollo completo del frontend y lógica de negocio (React + Tailwind CSS). Plataforma web de captación de clientes + sitio web institucional completo.",
       "highlights": []
     },
@@ -83,7 +83,7 @@
       "name": "La Promesa Deportes — Sitio Web Corporativo",
       "position": "Freelance Full-Stack Developer",
       "url": "https://la-promesa.vercel.app",
-      "startDate": "2026",
+      "startDate": "2025",
       "endDate": "2026",
       "summary": "Sitio web institucional para empresa manufacturera de indumentaria deportiva. Stack: Astro + Tailwind CSS. Catálogo dinámico de productos via Google Sheets API. En producción: la-promesa.vercel.app",
       "highlights": []
@@ -92,8 +92,8 @@
       "name": "AuditBot / AuditAI — Análisis de Resúmenes Bancarios",
       "position": "Backend Developer",
       "url": "",
-      "startDate": "2025",
-      "endDate": "2026",
+      "startDate": "2024",
+      "endDate": "2025",
       "summary": "Sistema backend para análisis automatizado de resúmenes bancarios con IA. Pipelines de extracción, normalización y validación de datos financieros. Sistema RAG con base vectorial + integración con APIs de IA y Telegram. Arquitectura de microservicios.",
       "highlights": []
     }

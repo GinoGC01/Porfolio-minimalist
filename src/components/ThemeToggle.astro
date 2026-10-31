@@ -1,0 +1,139 @@
+---
+// Botón para alternar entre tema claro y oscuro.
+// El tema se resuelve antes del primer render en Layout.astro.
+---
+
+<button
+  id="theme-toggle"
+  class="theme-toggle"
+  type="button"
+  aria-label="Cambiar a modo oscuro"
+  title="Cambiar a modo oscuro"
+>
+  <svg
+    class="icon icon-moon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+  </svg>
+  <svg
+    class="icon icon-sun"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <circle cx="12" cy="12" r="4"></circle>
+    <path d="M12 2v2"></path>
+    <path d="M12 20v2"></path>
+    <path d="m4.93 4.93 1.41 1.41"></path>
+    <path d="m17.66 17.66 1.41 1.41"></path>
+    <path d="M2 12h2"></path>
+    <path d="M20 12h2"></path>
+    <path d="m6.34 17.66-1.41 1.41"></path>
+    <path d="m19.07 4.93-1.41 1.41"></path>
+  </svg>
+</button>
+
+<script>
+  const button = document.getElementById("theme-toggle");
+
+  const syncButton = () => {
+    const isDark = document.documentElement.dataset.theme === "dark";
+    const label = isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro";
+
+    button?.setAttribute("aria-label", label);
+    button?.setAttribute("title", label);
+  };
+
+  if (button) {
+    syncButton();
+
+    button.addEventListener("click", () => {
+      const next =
+        document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+
+      document.documentElement.dataset.theme = next;
+
+      try {
+        localStorage.setItem("theme", next);
+      } catch {
+        // Si localStorage no está disponible, el tema solo dura la sesión.
+      }
+
+      syncButton();
+    });
+  }
+
+  // Si el usuario no eligió un tema manualmente, seguir el del sistema.
+  const media = window.matchMedia("(prefers-color-scheme: dark)");
+  media.addEventListener("change", (event) => {
+    try {
+      if (localStorage.getItem("theme")) return;
+    } catch {
+      return;
+    }
+
+    document.documentElement.dataset.theme = event.matches ? "dark" : "light";
+    syncButton();
+  });
+</script>
+
+<style>
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition:
+      background-color 0.15s ease,
+      color 0.15s ease,
+      border-color 0.15s ease;
+  }
+
+  .theme-toggle:hover {
+    background-color: var(--bg-hover);
+    border-color: var(--border);
+    color: var(--text);
+  }
+
+  .theme-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .icon-sun {
+    display: none;
+  }
+
+  html[data-theme="dark"] .icon-sun {
+    display: block;
+  }
+
+  html[data-theme="dark"] .icon-moon {
+    display: none;
+  }
+</style>

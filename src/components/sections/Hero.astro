@@ -8,6 +8,7 @@ import GitHub from "../../icons/GitHub.astro";
 import LinkedIn from "../../icons/LinkedIn.astro";
 import Gmail from "../../icons/Mail.astro";
 import Phone from "../../icons/Phone.astro";
+import ThemeToggle from "../ThemeToggle.astro";
 
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
@@ -27,16 +28,9 @@ const xUrl = xInfo?.url;
 
 <section style="position: relative;">
   <div class="lang-selector">
-    <a
-      href="/"
-      style={`text-decoration: none; padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); font-size: 0.8em; ${lang === "es" ? "background: rgba(0,0,0,0.05); font-weight: bold;" : "color: rgba(0,0,0,0.6)"}`}
-      >ES</a
-    >
-    <a
-      href="/en"
-      style={`text-decoration: none; padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); font-size: 0.8em; ${lang === "en" ? "background: rgba(0,0,0,0.05); font-weight: bold;" : "color: rgba(0,0,0,0.6)"}`}
-      >EN</a
-    >
+    <a href="/" class={`lang-btn ${lang === "es" ? "active" : ""}`}>ES</a>
+    <a href="/en" class={`lang-btn ${lang === "en" ? "active" : ""}`}>EN</a>
+    <ThemeToggle />
   </div>
   <div class="container">
     <div class="info">
@@ -126,7 +120,32 @@ const xUrl = xInfo?.url;
     right: 0;
     top: 0;
     display: flex;
+    align-items: center;
     gap: 8px;
+  }
+
+  .lang-btn {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border-subtle);
+    font-size: 0.8em;
+    color: var(--text-muted);
+    transition:
+      background-color 0.15s ease,
+      color 0.15s ease,
+      border-color 0.15s ease;
+  }
+
+  .lang-btn:hover {
+    background-color: var(--bg-hover);
+    border-color: var(--border);
+    color: var(--text);
+  }
+
+  .lang-btn.active {
+    background-color: var(--surface);
+    color: var(--text);
+    font-weight: bold;
   }
 
   .container {
@@ -149,7 +168,7 @@ const xUrl = xInfo?.url;
   }
 
   span {
-    color: rgba(0, 0, 0, 0.65);
+    color: var(--text-muted);
     margin-top: 20px;
   }
 
@@ -165,7 +184,7 @@ const xUrl = xInfo?.url;
     gap: 0.3em;
     padding: 5px 10px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-subtle);
   }
 
   .print > ul > li a {
@@ -177,14 +196,17 @@ const xUrl = xInfo?.url;
   .web > ul > li {
     display: flex;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-subtle);
     border-radius: 5px;
-    transition: background-color ease-in 0.1s;
+    transition:
+      background-color ease-in 0.1s,
+      border-color ease-in 0.1s;
     cursor: pointer;
   }
 
   .web > ul > li:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--bg-hover);
+    border-color: var(--border);
   }
 
   button {
@@ -198,8 +220,14 @@ const xUrl = xInfo?.url;
     align-items: center;
     justify-content: center;
     margin: auto;
-    color: rgba(0, 0, 0, 0.65);
+    color: var(--text-muted);
     padding: 10px;
+    transition: color ease-in 0.1s;
+  }
+
+  .web > ul > li:hover > a,
+  .web > ul > li:hover > button {
+    color: var(--text);
   }
 
   .web,

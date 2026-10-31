@@ -152,14 +152,14 @@ const renderSkillItem = (name: string, level?: string) => {
   h4 {
     font-size: 0.9em;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.55);
+    color: var(--text-muted);
     margin-bottom: 0.4em;
   }
 
   .learning li {
     font-size: 0.95em;
     background-color: transparent;
-    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border: 1px dashed var(--border);
     opacity: 0.75;
   }
 
@@ -175,7 +175,7 @@ const renderSkillItem = (name: string, level?: string) => {
     font-size: 1.1em;
     font-weight: 500;
     padding: 5px 10px;
-    background-color: #0000000e;
+    background-color: var(--surface);
     border-radius: 10px;
     transition: opacity 0.2s;
     cursor: pointer;
@@ -185,10 +185,10 @@ const renderSkillItem = (name: string, level?: string) => {
     position: absolute;
     top: -10px;
     right: -20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--tooltip-bg);
     padding: 2px 5px;
     border-radius: 5px;
-    color: white;
+    color: var(--tooltip-text);
     opacity: 0;
     transition: opacity 0.2s;
   }

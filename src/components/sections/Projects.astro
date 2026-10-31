@@ -65,7 +65,7 @@ import GitHub from '../../icons/GitHub.astro'
 
     article{
         padding: 20px;
-        border: 1px solid #0000000e;
+        border: 1px solid var(--border-subtle);
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -81,17 +81,17 @@ import GitHub from '../../icons/GitHub.astro'
 
     /* Track */
     article::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--bg-element);
     }
 
     /* Handle */
     article::-webkit-scrollbar-thumb {
-    background: #888;
+    background: var(--border);
     }
 
     /* Handle on hover */
     article::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--text-muted);
     }
 
     header{
@@ -112,7 +112,7 @@ import GitHub from '../../icons/GitHub.astro'
 
     h4 a:hover{
         transform: scale(1.03);
-        color: #000000b2;
+        color: var(--text-muted);
     }
 
     h4 span{
@@ -121,11 +121,11 @@ import GitHub from '../../icons/GitHub.astro'
     }
 
     .green{
-        color: rgb(31, 148, 31);
+        color: var(--success);
     }
 
     .parado{
-        color: gray;
+        color: var(--text-muted);
         animation: none;
     }
 
@@ -140,11 +140,11 @@ import GitHub from '../../icons/GitHub.astro'
 
     footer ul li{
         display: inline;
-        background-color: #0000000e;
+        background-color: var(--surface);
         padding: 5px 10px;
         border-radius: 10px;
         font-size: .9em;
-        color: #0000009f;
+        color: var(--text-muted);
     }
 
     @keyframes fliker{

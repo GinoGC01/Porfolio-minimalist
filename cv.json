@@ -35,12 +35,12 @@
   },
   "work": [
     {
-      "name": "ACOMVITA — Plataforma Médica Multi-tenant",
+      "name": "ACOMVITA — Plataforma Médica (PSP) Multi-tenant",
       "position": "Full-Stack Developer",
       "url": "",
       "startDate": "2026",
       "endDate": "Presente",
-      "summary": "Plataforma médica (PSP) multi-tenant con RBAC y aislamiento estricto de datos. Agente conversacional clínico (RAG) y máquina de estados multicanal (Telegram/Web) con sesiones persistentes y control de concurrencia. BackOffice enterprise (22 módulos CRUD) y suite de +140 tests automatizados (unitarios/integración).",
+      "summary": "Plataforma médica de programa de soporte de atencion a pacientes, multi-tenant con RBAC y aislamiento estricto de datos. Agente conversacional clínico (RAG) y máquina de estados multicanal (Telegram/Web) con sesiones persistentes y control de concurrencia. BackOffice enterprise (22 módulos CRUD) y suite de +140 tests automatizados (unitarios/integración).",
       "highlights": []
     },
     {
